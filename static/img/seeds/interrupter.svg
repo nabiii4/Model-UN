@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500"><defs><filter id="w"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter></defs><rect width="400" height="500" fill="#fffdf8"/><g fill="none" stroke="#2a2d33" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#w)">
+<path d="M200 90 q-80 0 -80 90 q0 90 80 96 q80 -6 80 -96 q0 -90 -80 -90z" fill="#fff"/>
+<path d="M126 140 l-10 -40 l24 18 l6 -40 l20 30 l14 -44 l16 40 l20 -42 l10 44 l24 -30 l2 40 l22 -16 l-10 40 q-30 -40 -70 -40 q-44 0 -74 40z" fill="#2a2d33"/>
+<circle cx="172" cy="158" r="16" fill="#fff"/><circle cx="228" cy="158" r="16" fill="#fff"/><circle cx="174" cy="158" r="6" fill="#2a2d33"/><circle cx="230" cy="158" r="6" fill="#2a2d33"/>
+<path d="M150 130 l40 8 M250 130 l-40 8" stroke-width="6"/>
+<ellipse cx="200" cy="228" rx="42" ry="34" fill="#2a2d33"/><path d="M172 214 q28 14 56 0" stroke="#fff" stroke-width="3"/>
+<path d="M90 500 q8 -140 70 -160 l80 0 q62 20 70 160z" fill="#f6a96b"/>
+<path d="M300 340 l40 -150" stroke-width="8"/><rect x="300" y="120" width="80" height="60" fill="#fff" transform="rotate(10 340 150)"/>
+<text x="340" y="160" font-family="Arial, Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#2a2d33" stroke="none" transform="rotate(10 340 150)">POI!</text>
+<path d="M110 360 l-70 -60 l-20 -4 m20 4 l4 -18" stroke-width="7"/>
+<path d="M40 70 q30 -40 90 -30" /><text x="40" y="60" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#d64545" stroke="none">BUT—</text>
+</g></svg>

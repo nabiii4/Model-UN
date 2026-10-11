@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block styles %}<link rel="stylesheet" href="/static/css/pages/practice.css">{% endblock %}
+{% block body_class %}room-page{% endblock %}
+{% block main_class %}full{% endblock %}
+{% block footer %}{% endblock %}
+{% block fab %}{% endblock %}
+{% block content %}
+<div class="room" id="room">
+  <div class="room-top" id="room-top">
+    <div class="top-info" id="top-info"><span class="muted">Loading the room…</span></div>
+    <div class="top-right">
+      <span class="progress" id="progress" aria-live="polite"></span>
+      <button class="btn small ghost" type="button" data-suggest>Suggest a change</button>
+      <button class="btn small" type="button" id="exit-btn">Exit</button>
+    </div>
+  </div>
+  <div class="room-body">
+    <aside class="stage" id="stage" aria-label="Your opponent">
+      <div class="stage-drawing" id="stage-drawing"></div>
+      <div class="stage-face">
+        <div class="puppet" id="puppet"></div>
+        <div class="stage-meta">
+          <strong id="stage-name"></strong>
+          <span class="placard" id="stage-placard"></span>
+          <div id="heat-dial"></div>
+        </div>
+      </div>
+    </aside>
+    <section class="convo" aria-label="The debate">
+      <div class="transcript" id="transcript" role="log" aria-live="polite" aria-relevant="additions" tabindex="0" aria-label="Transcript"></div>
+      <div class="input-area" id="input-area">
+        <div class="hint-box sticky" id="hint-box" hidden role="status"></div>
+        <label for="answer" class="sr-only">Your answer</label>
+        <textarea id="answer" rows="3" maxlength="2000" placeholder="Type your answer… (Ctrl + Enter sends)"></textarea>
+        <div class="input-row">
+          <div class="input-left">
+            <span class="word-count" id="word-count">0 words</span>
+            <div class="timer-ring" id="timer" hidden aria-hidden="true">
+              <svg viewBox="0 0 64 64"><circle class="track" cx="32" cy="32" r="28" fill="none" stroke-width="6"/><circle class="bar" cx="32" cy="32" r="28" fill="none" stroke-width="6" stroke-dasharray="175.9" stroke-dashoffset="0"/></svg>
+              <span class="t" id="timer-text"></span>
+            </div>
+          </div>
+          <div class="btn-row input-buttons">
+            <button class="btn small" type="button" id="hint-btn" aria-keyshortcuts="h">💡 Hint</button>
+            <button class="btn small" type="button" id="switch-btn">⇄ Switch sides</button>
+            <button class="btn small" type="button" id="breath-btn" aria-keyshortcuts="b">🫁 Take a breath</button>
+            <button class="btn small" type="button" id="end-btn" aria-keyshortcuts="e">End round</button>
+            <button class="btn primary" type="button" id="send-btn" aria-keyshortcuts="Control+Enter">Send</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}<script type="module" src="/static/js/practice.js"></script>{% endblock %}

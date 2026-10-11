@@ -1,0 +1,12 @@
+.stage-path { display: flex; list-style: none; padding: 0; margin: 10px 0; gap: 10px; flex-wrap: wrap; }
+.stage-path li { flex: 1; min-width: 150px; text-align: center; border: 2px dashed var(--ink-soft); border-radius: 14px; padding: 12px; color: var(--ink-soft); }
+.stage-path li .icon { font-size: 2rem; display: block; }
+.stage-path li.reached { border-style: solid; border-color: var(--border); color: var(--ink); }
+.stage-path li.current { background: var(--highlighter); color: #23262B; box-shadow: 0 0 0 6px rgba(255, 228, 92, .45); font-weight: 700; }
+.me-grid { margin: 16px 0; }
+.journal { display: grid; gap: 10px; max-height: 420px; overflow: auto; padding: 4px; }
+.row-list { list-style: none; padding: 0; margin: 0; }
+.row-list li { display: flex; justify-content: space-between; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px dashed var(--paper-line); flex-wrap: wrap; }
+.comfort-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 4px 18px; }
+.befriend-title { margin-top: 14px; }
+section.panel { margin-bottom: 16px; }

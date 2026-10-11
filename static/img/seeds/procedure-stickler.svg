@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500"><defs><filter id="w"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter></defs><rect width="400" height="500" fill="#fffdf8"/><g fill="none" stroke="#2a2d33" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#w)">
+<path d="M200 96 q-72 0 -74 84 q0 84 74 90 q74 -6 74 -90 q-2 -84 -74 -84z" fill="#fff"/>
+<path d="M126 154 q4 -70 74 -72 q70 2 74 72 q-14 -36 -74 -40 q-28 2 -40 20 q-20 4 -34 20z" fill="#2a2d33"/>
+<path d="M156 160 l32 10 M244 160 l-32 10" stroke-width="6"/>
+<path d="M150 186 q22 14 44 0 M206 186 q22 14 44 0"/><circle cx="172" cy="182" r="4" fill="#2a2d33"/><circle cx="228" cy="182" r="4" fill="#2a2d33"/>
+<path d="M176 240 q24 -14 48 0"/>
+<path d="M92 500 q8 -146 68 -166 l80 0 q60 20 68 166z" fill="#4a4f58"/>
+<path d="M172 340 l28 14 l28 -14 l0 24 l-28 -14 l-28 14z" fill="#d64545"/>
+<rect x="290" y="250" width="80" height="34" rx="6" fill="#c9a27e" transform="rotate(-24 330 267)"/><path d="M330 280 l-30 120" stroke-width="10"/>
+<rect x="40" y="360" width="90" height="120" fill="#2f4f3e"/><text x="85" y="420" font-family="Arial" font-weight="bold" font-size="16" text-anchor="middle" fill="#fff" stroke="none">RULES</text>
+<text x="60" y="80" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#2a2d33" stroke="none">Point of order!</text>
+</g></svg>

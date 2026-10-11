@@ -1,0 +1,14 @@
+.feedback { max-width: 860px; margin: 0 auto; }
+.fb-card { margin-bottom: 18px; }
+.fb-card h2 { margin-bottom: 6px; }
+.strength-quote { font-family: var(--font-hand); font-size: 1.8rem; line-height: 1.25; margin: 6px 0 10px; }
+html[data-readable="1"] .strength-quote { font-family: var(--font-body); font-size: 1.3rem; }
+.skills { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.skill { border: 2px solid var(--border); border-radius: 12px; padding: 10px 12px; background: var(--card); }
+.skill .score { font-weight: 700; font-size: 1.2rem; }
+.score-dots { display: inline-flex; gap: 3px; margin-left: 6px; vertical-align: middle; }
+.score-dots i { width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--blue); }
+.score-dots i.on { background: var(--blue); }
+.continue-row { justify-content: center; margin: 24px 0; }
+.befriend { text-align: center; }
+.befriend .hand { font-size: 2rem; }

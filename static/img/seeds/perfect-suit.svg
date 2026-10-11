@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500"><defs><filter id="w"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter></defs><rect width="400" height="500" fill="#fffdf8"/><g fill="none" stroke="#2a2d33" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#w)">
+<path d="M200 70 q-70 0 -72 80 q-2 70 30 96 q20 16 42 16 q22 0 42 -16 q32 -26 30 -96 q-2 -80 -72 -80z" fill="#fff"/>
+<path d="M128 140 q4 -78 72 -80 q70 2 74 82 q-20 -40 -74 -42 q-50 2 -72 40z" fill="#2a2d33"/>
+<path d="M150 108 q50 -30 108 6" stroke="#fff" stroke-width="3"/>
+<path d="M162 168 l22 -4 M216 164 l22 4"/><ellipse cx="176" cy="186" rx="9" ry="4" fill="#2a2d33"/><ellipse cx="226" cy="186" rx="9" ry="4" fill="#2a2d33"/>
+<path d="M200 196 q-6 18 0 26"/><path d="M180 240 l42 0"/>
+<path d="M90 500 q6 -150 70 -168 l80 0 q64 18 70 168z" fill="#1f2f4f"/>
+<path d="M170 332 l30 60 l30 -60z" fill="#fff"/><path d="M193 344 l14 0 l6 70 l-13 14 l-13 -14z" fill="#d64545"/>
+<path d="M160 332 l34 90 M240 332 l-34 90" stroke="#fff" stroke-width="3"/>
+<path d="M226 350 q10 -14 20 -4" stroke="#fff"/>
+<path d="M120 488 l60 0 M220 488 l60 0" stroke="#2a2d33" stroke-width="10"/>
+<path d="M110 470 l-14 -10 M300 470 l16 -12 M128 462 l-4 -16 M290 460 l4 -16" stroke="#e8b800" stroke-width="3"/>
+<text x="200" y="40" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#2a2d33" stroke="none">never raises its voice</text>
+</g></svg>

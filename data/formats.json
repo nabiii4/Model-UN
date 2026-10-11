@@ -1,0 +1,77 @@
+{
+ "note": "Round formats (BUILD_PROMPT.md section 8.1). 'rules' is sent to the AI. 'exchanges' null = set by the Length option. 'word_limit' is the most a turn should be; 'target_words' is a good typed answer (used by the heat thermostat).",
+ "formats": [
+  {
+   "id": "rebuttal_duel",
+   "name": "Rebuttal Duel",
+   "blurb": "They make a point. You answer it. Back and forth.",
+   "who_starts": "delegate",
+   "exchanges": null,
+   "turn_seconds": 60,
+   "target_words": 60,
+   "phase": 1,
+   "rules": "The delegate opens with a short point (max 60 words). Then the student and the delegate take turns rebutting each other. Each turn answers the last one.",
+   "word_limit": 120
+  },
+  {
+   "id": "opening_speech",
+   "name": "Opening Speech",
+   "blurb": "You give a short speech. They answer with a question and a rebuttal.",
+   "who_starts": "student",
+   "exchanges": 3,
+   "turn_seconds": 90,
+   "target_words": 120,
+   "phase": 1,
+   "rules": "The student gives an opening speech first. Your first reply asks one Point of Information and then gives a short rebuttal. After that, normal back-and-forth for two more exchanges.",
+   "word_limit": 200
+  },
+  {
+   "id": "points_of_information",
+   "name": "Points of Information",
+   "blurb": "They ask 5 sharp questions. You answer each one.",
+   "who_starts": "delegate",
+   "exchanges": 5,
+   "turn_seconds": 30,
+   "target_words": 30,
+   "phase": 1,
+   "rules": "You only ask pointed questions (max 25 words each). Each reply briefly reacts to the student's answer and then asks the next question. Five questions in total.",
+   "word_limit": 60
+  },
+  {
+   "id": "moderated_caucus",
+   "name": "Moderated Caucus",
+   "blurb": "Quick speeches on one narrow subtopic.",
+   "who_starts": "delegate",
+   "exchanges": 3,
+   "turn_seconds": 45,
+   "target_words": 50,
+   "phase": 1,
+   "rules": "This is a moderated caucus on a narrow subtopic. Keep every turn short and focused on that subtopic. Three exchanges.",
+   "word_limit": 90
+  },
+  {
+   "id": "bloc_building",
+   "name": "Bloc Building",
+   "blurb": "Win them over so they sign your working paper.",
+   "who_starts": "student",
+   "exchanges": 5,
+   "turn_seconds": 60,
+   "target_words": 60,
+   "phase": 2,
+   "rules": "The student tries to win your signature on a working paper. You have two hidden must-haves. Only agree to sign when both are addressed.",
+   "word_limit": 120
+  },
+  {
+   "id": "procedure_drill",
+   "name": "Procedure Drill",
+   "blurb": "The Chair gives a situation. You name the right motion or point.",
+   "who_starts": "delegate",
+   "exchanges": 5,
+   "turn_seconds": 30,
+   "target_words": 15,
+   "phase": 2,
+   "rules": "You act as the Chair. Describe a committee situation; the student names the right motion or point; you rule it in or out of order.",
+   "word_limit": 40
+  }
+ ]
+}

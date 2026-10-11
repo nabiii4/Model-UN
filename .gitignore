@@ -1,0 +1,27 @@
+# Secrets: real keys live ONLY in .env, which must never be committed.
+.env
+.env.*
+!.env.example
+
+# Local database and uploads
+instance/
+*.db
+*.sqlite3
+
+# Downloaded by scripts/fetch_vendor.py
+static/vendor/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Editors / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Test artifacts
+tests/e2e/screenshots/

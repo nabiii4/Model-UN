@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block styles %}<link rel="stylesheet" href="/static/css/pages/practice.css">{% endblock %}
+{% block content %}
+<h1>Set up a round</h1>
+<p class="muted">{{ copy('practice.tip') }}</p>
+<div id="lock-box" hidden></div>
+<div id="quick-box" class="panel quick-box" hidden>
+  <div><h2 class="hand">Quick Start</h2><p class="muted small" id="quick-desc"></p></div>
+  <button class="btn primary big" type="button" id="quick-start">⚡ Quick Start</button>
+</div>
+<form id="setup" class="setup" novalidate>
+  <div class="panel">
+    <div class="field">
+      <label for="delegate">Your opponent</label>
+      <select id="delegate" required></select>
+      <p class="hint-text" id="delegate-hint"></p>
+    </div>
+  </div>
+  <fieldset class="panel format-field">
+    <legend>Format</legend>
+    <div class="format-cards" id="formats"></div>
+  </fieldset>
+  <div class="panel grid-2">
+    <div class="field">
+      <label for="committee">Committee</label>
+      <select id="committee"></select>
+    </div>
+    <div class="field">
+      <label for="topic">Topic</label>
+      <div class="topic-row"><select id="topic"></select><button class="btn small" type="button" id="surprise">🎲 Surprise me</button></div>
+      <label for="topic-custom" class="small">Or write your own (120 characters max)</label>
+      <input type="text" id="topic-custom" maxlength="120" placeholder="Your own topic (optional)">
+    </div>
+    <div class="field">
+      <label for="my-country">My country</label>
+      <input id="my-country" list="country-list" autocomplete="off" placeholder="Start typing… e.g. Canada">
+    </div>
+    <div class="field">
+      <label for="their-country">Their country <span class="hint-text">(we pick one if you leave it empty)</span></label>
+      <input id="their-country" list="country-list" autocomplete="off" placeholder="Surprise me">
+    </div>
+    <datalist id="country-list"></datalist>
+  </div>
+  <div class="panel grid-2">
+    <fieldset>
+      <legend>Mode</legend>
+      <label class="check"><input type="radio" name="mode" value="type" checked> ⌨️ Type</label>
+      <p class="hint-text">🎤 Speak mode arrives in Phase 2. Typing is first-class, never second-best.</p>
+    </fieldset>
+    <fieldset>
+      <legend>Difficulty</legend>
+      <div class="pip-buttons" id="difficulty" role="group" aria-label="Difficulty"></div>
+      <p class="hint-text" id="difficulty-hint"></p>
+    </fieldset>
+    <fieldset>
+      <legend>Length</legend>
+      <label class="check"><input type="radio" name="length" value="quick"> Quick (3 exchanges)</label>
+      <label class="check"><input type="radio" name="length" value="standard"> Standard (5 exchanges)</label>
+      <label class="check"><input type="radio" name="length" value="timed"> Timed (4 minutes)</label>
+    </fieldset>
+    <fieldset>
+      <legend>Options</legend>
+      <label class="check"><input type="checkbox" id="opt-hints" checked> Hints (2 per round)</label>
+      <label class="check"><input type="checkbox" id="opt-timer"> Speech timer</label>
+      <label class="check"><input type="checkbox" id="opt-breath"> Take a breath first</label>
+    </fieldset>
+  </div>
+  <p id="setup-error" class="error-text" role="alert"></p>
+  <div class="btn-row"><button class="btn primary big" type="submit" id="start">Start the round</button><a class="btn ghost" href="/wall">Pick from the Wall</a></div>
+</form>
+{% endblock %}
+{% block scripts %}<script type="module" src="/static/js/setup.js"></script>{% endblock %}

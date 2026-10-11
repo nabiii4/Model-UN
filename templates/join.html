@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="auth-wrap">
+  <form class="panel auth-form" id="join-form" novalidate>
+    <h1>Join the club</h1>
+    <p class="muted">First name + a 4-number PIN. No email, no last name. That's it.</p>
+    {% if page_data.demo_code %}<p class="callout note">Demo mode: the club code is <strong>{{ page_data.demo_code }}</strong>.</p>{% endif %}
+    <div class="field"><label for="club-code">Club code <span class="hint-text">(ask an officer)</span></label><input type="text" id="club-code" autocomplete="off" required maxlength="60"></div>
+    <div class="field"><label for="name">First name or nickname</label><input type="text" id="name" autocomplete="given-name" required maxlength="30"></div>
+    <div class="field"><label for="pin">Pick a 4-number PIN</label><input type="password" id="pin" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="new-password" required><p class="hint-text">Don't use your locker combo. An officer can reset it if you forget.</p></div>
+    <label class="check"><input type="checkbox" id="shared" checked> This is a shared Chromebook <span class="hint-text">(log me out when the browser closes or after 30 idle minutes)</span></label>
+    <p class="error-text" id="join-error" role="alert"></p>
+    <div class="btn-row"><button class="btn primary big" type="submit" id="join-btn">Join</button><a href="/login?next={{ page_data.next|urlencode }}">I already joined — log in</a></div>
+  </form>
+</div>
+{% endblock %}
+{% block scripts %}<script type="module" src="/static/js/auth.js"></script>{% endblock %}

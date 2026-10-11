@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500"><defs><filter id="w"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter></defs><rect width="400" height="500" fill="#fffdf8"/><g fill="none" stroke="#2a2d33" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#w)">
+<g stroke-dasharray="10 10">
+<path d="M200 90 q-76 0 -78 88 q0 88 78 94 q78 -6 78 -94 q-2 -88 -78 -88z"/>
+<path d="M90 500 q8 -146 70 -166 l80 0 q62 20 70 166z"/>
+<rect x="250" y="380" width="110" height="60" rx="4"/>
+</g>
+<text x="200" y="215" font-family="Arial, Helvetica, sans-serif" font-size="110" text-anchor="middle" fill="#2a2d33" stroke="none">?</text>
+<text x="200" y="60" font-family="Arial, Helvetica, sans-serif" font-size="24" text-anchor="middle" fill="#5b616b" stroke="none">you choose</text>
+</g></svg>

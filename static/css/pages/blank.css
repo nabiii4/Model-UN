@@ -1,0 +1,8 @@
+.blank-grid { display: grid; grid-template-columns: 2fr 3fr; gap: 22px; align-items: start; }
+.blank-left { display: flex; flex-direction: column; align-items: center; gap: 8px; position: sticky; top: calc(var(--header-h) + 14px); text-align: center; }
+.blank-puppet { max-width: 260px; }
+.blank-name { font-size: 1.8rem; margin: 0; }
+.look-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px 14px; margin-top: 8px; }
+.look-details summary { cursor: pointer; font-size: 1.3rem; min-height: 44px; display: flex; align-items: center; }
+.tactic-row { display: grid; grid-template-columns: 1.4fr 2fr 2em; gap: 8px; align-items: center; margin-bottom: 6px; }
+@media (max-width: 860px) { .blank-grid { grid-template-columns: 1fr; } .blank-left { position: static; } }

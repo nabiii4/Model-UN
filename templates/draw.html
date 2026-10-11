@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% block styles %}<link rel="stylesheet" href="/static/css/pages/draw.css">{% endblock %}
+{% block content %}
+<h1>Draw your nightmare</h1>
+<ol class="pencil-steps" id="steps" aria-label="Steps">
+  <li data-i="0">Draw</li><li data-i="1">3 questions</li><li data-i="2">Bring it to life</li><li data-i="3">Meet your nightmare</li><li data-i="4">Save</li>
+</ol>
+
+<!-- Step 1: draw -->
+<section id="step-0" class="step" aria-labelledby="h-0">
+  <h2 id="h-0" tabindex="-1">The first thing you get is a blank sheet.</h2>
+  <p class="muted">Draw the debate opponent that scares you most. Messy is perfect.</p>
+  <div id="path-choice" class="btn-row path-choice" hidden>
+    <a class="btn big" href="/draw?path=paper">📄 I drew on paper</a>
+    <a class="btn big" href="/draw?path=canvas">💻 I'll draw on screen</a>
+  </div>
+
+  <div id="paper-path" hidden>
+    <div class="tabs" role="tablist" aria-label="How to get your photo in">
+      <button class="tab" role="tab" id="tab-btn-camera" aria-controls="tab-camera" aria-selected="true">This laptop's camera</button>
+      <button class="tab" role="tab" id="tab-btn-upload" aria-controls="tab-upload" aria-selected="false">Upload a photo</button>
+    </div>
+    <div id="tab-camera" role="tabpanel" aria-labelledby="tab-btn-camera"></div>
+    <div id="tab-upload" role="tabpanel" aria-labelledby="tab-btn-upload" hidden>
+      <label class="dropzone" id="dropzone" for="file-input">
+        <span class="hand big-hand">Drop a photo here</span>
+        <span>or click to choose one (on a phone, this opens the camera)</span>
+        <input type="file" id="file-input" accept="image/*" capture="environment" class="sr-only">
+      </label>
+      <div id="crop-area" hidden>
+        <p class="muted small">Drag the box around your drawing. Drag the corner to resize. (Keyboard: arrow keys move it, Shift + arrows resize it.)</p>
+        <div class="crop-wrap" id="crop-wrap"><img id="crop-img" alt="Your photo"><div class="crop-box" id="crop-box" tabindex="0" role="slider" aria-label="Crop box" aria-valuetext="Crop box"><span class="crop-handle" id="crop-handle"></span></div></div>
+        <div class="btn-row"><button class="btn primary" type="button" id="crop-use">Use this</button><button class="btn" type="button" id="crop-cancel">Pick another photo</button></div>
+      </div>
+    </div>
+    <label class="check"><input type="checkbox" id="boost" checked> Boost pencil lines (helps light pencil show up)</label>
+  </div>
+
+  <div id="canvas-path" hidden>
+    <div id="pad"></div>
+    <div class="btn-row"><button class="btn primary big" type="button" id="done-drawing">Done drawing</button></div>
+  </div>
+
+  <div id="captured" class="captured" hidden>
+    <div class="drawing-frame"><img id="captured-img" alt="Your drawing"></div>
+    <div class="btn-row"><button class="btn primary big" type="button" id="use-photo">Use this</button><button class="btn" type="button" id="retake">Retake</button></div>
+  </div>
+
+  <p class="alt-paths small">
+    <a href="/draw?path=paper" id="link-paper">Switch to paper + photo</a>
+    <a href="/draw?path=canvas" id="link-canvas">Switch to the drawing pad</a>
+    <button type="button" class="btn ghost small" id="describe-instead">Can't draw right now? Describe it in words</button>
+  </p>
+</section>
+
+<!-- Step 2: the 3 optional questions -->
+<section id="step-1" class="step" hidden aria-labelledby="h-1">
+  <h2 id="h-1" tabindex="-1">3 quick questions <span class="small muted">(all optional)</span></h2>
+  <div id="questions" class="panel"></div>
+  <div class="btn-row q-actions">
+    <button class="btn primary big" type="button" id="q-continue">Bring it to life ✨</button>
+    <button class="btn ghost" type="button" id="q-skip">Skip</button>
+  </div>
+</section>
+
+<!-- Step 3: bring it to life -->
+<section id="step-2" class="step" hidden aria-labelledby="h-2">
+  <h2 id="h-2" tabindex="-1">Bringing it to life…</h2>
+  <div id="life-loading" class="life-loading">
+    <svg class="loader-scribble" viewBox="0 0 140 70" aria-hidden="true"><path d="M10 50 Q30 5 50 40 T90 35 T130 20"/></svg>
+    <p class="hand loading-line" id="loading-line" role="status"></p>
+  </div>
+  <div id="life-message" hidden></div>
+  <div id="life-describe" hidden class="panel">
+    <label for="describe-text" id="describe-label"></label>
+    <textarea id="describe-text" maxlength="200" rows="2" placeholder="Example: A giant mouth that never stops talking and points at everyone."></textarea>
+    <div class="btn-row"><button class="btn primary" type="button" id="describe-go">Bring it to life</button><a class="btn ghost" href="/human">Start a Human Round instead</a></div>
+  </div>
+  <div id="reveal" hidden>
+    <h3 class="hand">Clues I saw in your drawing</h3>
+    <ul id="clue-list" class="clue-reveal" aria-live="polite"></ul>
+    <div class="btn-row"><button class="btn primary big" type="button" id="to-meet" hidden>Meet your nightmare →</button></div>
+  </div>
+</section>
+
+<!-- Step 4: meet your nightmare -->
+<section id="step-3" class="step" hidden aria-labelledby="h-3">
+  <h2 id="h-3" tabindex="-1">{{ copy('meet.headline') }}</h2>
+  <p id="real-person-note" class="callout note" hidden></p>
+  <div class="meet-grid">
+    <div class="meet-left"><div class="drawing-frame big-drawing" id="meet-drawing"></div></div>
+    <div class="meet-right flip-card" id="meet-flip">
+      <div class="flip-inner panel" id="persona-card"></div>
+      <div class="panel revise">
+        <label for="revise-text">Not quite? Tell it what to change</label>
+        <div class="revise-row"><input type="text" id="revise-text" maxlength="300" placeholder="Example: interrupt less, and make it a bit stricter"><button class="btn" type="button" id="revise-go">Change it</button></div>
+        <div id="revise-result" hidden></div>
+      </div>
+    </div>
+  </div>
+  <div class="btn-row step-nav"><button class="btn primary big" type="button" id="to-save">Looks right — save it</button></div>
+</section>
+
+<!-- Step 5: save -->
+<section id="step-4" class="step" hidden aria-labelledby="h-4">
+  <h2 id="h-4" tabindex="-1">Save your nightmare</h2>
+  <form id="save-form" class="panel save-form">
+    <fieldset id="vis-field"><legend>Put it on the Nightmare Wall?</legend>
+      <label class="check"><input type="radio" name="visibility" value="public" checked> Yes, put it on the Wall</label>
+      <label class="check"><input type="radio" name="visibility" value="private"> Keep it private</label>
+    </fieldset>
+    <fieldset id="credit-field"><legend>Credit:</legend>
+      <label class="check"><input type="radio" name="credit" value="name" checked> My first name</label>
+      <label class="check"><input type="radio" name="credit" value="anonymous"> Anonymous</label>
+    </fieldset>
+    <div class="field">
+      <label for="story">The story (optional): why is this your nightmare?</label>
+      <textarea id="story" maxlength="280" rows="3"></textarea>
+      <p class="hint-text"><span id="story-count">0</span>/280</p>
+    </div>
+    <p id="save-error" class="error-text" role="alert"></p>
+    <div class="btn-row"><button class="btn primary big" type="submit" id="save-btn">Save it</button></div>
+  </form>
+  <div id="saved" class="panel saved" hidden></div>
+</section>
+{% endblock %}
+{% block scripts %}<script type="module" src="/static/js/draw.js"></script>{% endblock %}

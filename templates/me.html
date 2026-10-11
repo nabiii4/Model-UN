@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block styles %}<link rel="stylesheet" href="/static/css/pages/me.css">{% endblock %}
+{% block content %}
+<h1>My Journey</h1>
+<p class="muted">Your own growth. No rankings, ever.</p>
+<section class="panel" aria-labelledby="stage-title">
+  <h2 id="stage-title" class="hand">Pockets → Keyboard → Microphone</h2>
+  <ol class="stage-path" id="stage-path"></ol>
+  <p id="show-up" class="muted"></p>
+</section>
+<div class="grid-2 me-grid">
+  <section class="panel" aria-labelledby="sj-title"><h2 id="sj-title" class="hand">Strength Journal</h2><div id="strengths" class="journal"></div></section>
+  <section class="panel" aria-labelledby="nm-title"><h2 id="nm-title" class="hand">My nightmares</h2><div id="nightmares"></div>
+    <h3 class="hand befriend-title">Fear meters</h3><div id="fears"></div></section>
+</div>
+<section class="panel" aria-labelledby="rounds-title"><h2 id="rounds-title" class="hand">Past rounds</h2><div id="rounds"></div></section>
+<section class="panel" aria-labelledby="comfort-title">
+  <h2 id="comfort-title" class="hand">Comfort settings</h2>
+  <p class="muted small">Captions are always on. Timers, voice, and cameras are always optional.</p>
+  <form id="comfort-form" class="comfort-grid"></form>
+  <p class="small muted" id="comfort-status" role="status"></p>
+</section>
+<section class="panel" aria-labelledby="sugg-title"><h2 id="sugg-title" class="hand">My suggestions</h2><div id="suggestions"></div></section>
+<section class="panel" aria-labelledby="data-title">
+  <h2 id="data-title" class="hand">My data</h2>
+  <p>We only keep your first name, a scrambled PIN, and your practice. <a href="/privacy">Privacy page</a></p>
+  <div class="btn-row">
+    <a class="btn" href="/api/me/export" download>⬇ Download my data</a>
+    <button class="btn danger" type="button" id="delete-me">Delete my data</button>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}<script type="module" src="/static/js/journey.js"></script>{% endblock %}

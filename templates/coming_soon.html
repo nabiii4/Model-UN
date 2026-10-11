@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="panel prose center-panel">
+  <h1>{{ page_data.heading }}</h1>
+  <p class="lead">{{ page_data.text }}</p>
+  <div class="btn-row"><a class="btn primary" href="{{ page_data.back or '/' }}">Go back</a><a class="btn" href="/draw">Draw a nightmare</a><a class="btn" href="/human">Start a Human Round</a></div>
+</div>
+{% endblock %}

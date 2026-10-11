@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="prose">
+  <h1>The Ritual</h1>
+  <p class="lead hand big-quote">{{ copy('ritual.p1') }}</p>
+  <p>Every new member gets offered three things: paper, a laptop, or a chair to just sit. Then a blank sheet, and one question: <em>who is the debate opponent that scares you most?</em></p>
+  <p>People drew huge mouths that never stopped talking, eyes that never blinked, a suit so perfect the shoes reflected light, and even Einstein's twin brother. Each drawing had a story behind it — a real person's fear.</p>
+  <p>We turned each drawing into a practice opponent. You practice one round. Then the screen tells you: <strong>{{ copy('handoff.text') }}</strong> A club member wrote that rule, because the website was keeping people on their screens. Now it's a warm-up, never a replacement.</p>
+  <p>Soon people got bored of their own nightmares and started practicing against each other's. That's how we learned what everyone found hard — and how we started helping each other.</p>
+  <blockquote class="sticky">{{ copy('ritual.p2') }}</blockquote>
+  <p>{{ copy('ritual.p3') }}</p>
+  <p>{{ copy('ritual.p4') }}</p>
+  <p class="hand big-quote">{{ copy('about.p1') }}</p>
+  <p>{{ copy('about.p2') }}</p>
+  <p class="muted">{{ copy('definition') }}</p>
+  <div class="btn-row"><a class="btn primary big" href="/draw">Grab a blank sheet</a></div>
+</article>
+{% endblock %}

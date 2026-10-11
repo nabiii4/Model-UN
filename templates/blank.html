@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block styles %}<link rel="stylesheet" href="/static/css/pages/draw.css"><link rel="stylesheet" href="/static/css/pages/blank.css">{% endblock %}
+{% block content %}
+<h1>The Blank</h1>
+<p class="muted">{{ copy('blank.headline') }}</p>
+<div class="blank-grid" id="blank-builder">
+  <div class="blank-left panel">
+    <div class="puppet blank-puppet" id="blank-puppet"></div>
+    <p class="hand blank-name" id="preview-name">?</p>
+    <p class="blank-liner" id="preview-liner" aria-live="polite"></p>
+    <button class="btn" type="button" id="randomize">🎲 Randomize</button>
+  </div>
+  <form class="blank-right panel" id="blank-form" novalidate>
+    <div class="field"><label for="b-name">Name</label><input type="text" id="b-name" maxlength="40" placeholder="The Midnight Moderator"></div>
+    <div class="field"><label for="b-temperament">Temperament</label><select id="b-temperament"></select></div>
+    <fieldset><legend>Tactics (0 = never, 5 = all the time)</legend><div id="b-tactics"></div></fieldset>
+    <fieldset><legend>Difficulty</legend><div class="pip-buttons" id="b-difficulty" role="group" aria-label="Difficulty"></div></fieldset>
+    <div class="grid-2">
+      <div class="field"><label for="b-voice">Voice</label><select id="b-voice"></select></div>
+      <div class="field"><label for="b-weakness">Its weakness</label><select id="b-weakness"></select></div>
+    </div>
+    <details class="look-details" open><summary class="hand">Look (never changes personality or difficulty)</summary><div class="look-grid" id="b-look"></div></details>
+    <p class="error-text" id="blank-error" role="alert"></p>
+    <div class="btn-row"><button class="btn primary big" type="submit" id="blank-next">Next: save it</button></div>
+    <p class="small muted">The full builder with 200+ options arrives in Phase 3.</p>
+  </form>
+</div>
+<section id="blank-save" class="panel save-form" hidden aria-labelledby="bs-title">
+  <h2 id="bs-title" tabindex="-1">Save your nightmare</h2>
+  <fieldset><legend>Put it on the Nightmare Wall?</legend>
+    <label class="check"><input type="radio" name="b-vis" value="public" checked> Yes, put it on the Wall</label>
+    <label class="check"><input type="radio" name="b-vis" value="private"> Keep it private</label></fieldset>
+  <fieldset><legend>Credit:</legend>
+    <label class="check"><input type="radio" name="b-credit" value="name" checked> My first name</label>
+    <label class="check"><input type="radio" name="b-credit" value="anonymous"> Anonymous</label></fieldset>
+  <div class="field"><label for="b-story">The story (optional): why is this your nightmare?</label><textarea id="b-story" maxlength="280" rows="3"></textarea></div>
+  <p class="error-text" id="bs-error" role="alert"></p>
+  <div class="btn-row"><button class="btn primary big" type="button" id="blank-save-btn">Save it</button><button class="btn" type="button" id="blank-back">Back to building</button></div>
+</section>
+<div id="blank-saved" class="panel saved" hidden></div>
+{% endblock %}
+{% block scripts %}<script type="module" src="/static/js/blank.js"></script>{% endblock %}

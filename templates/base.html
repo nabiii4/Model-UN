@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en"
+      data-text="{{ comfort.get('text_size', 100) }}"
+      data-readable="{{ '1' if comfort.get('readable_font') else '0' }}"
+      data-motion="{{ 'reduce' if comfort.get('reduced_motion') else 'auto' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token_value() }}">
+  <meta name="description" content="{{ copy('site.tagline') }}">
+  <title>{{ title }} · {{ club_name }}</title>
+  <link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/css/tokens.css">
+  <link rel="stylesheet" href="/static/css/base.css">
+  <link rel="stylesheet" href="/static/css/components.css">
+  {% block styles %}{% endblock %}
+</head>
+<body class="{% block body_class %}{% endblock %}">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  {% if mock_mode %}<div class="demo-ribbon" role="note">{{ copy('demo.ribbon') }}</div>{% endif %}
+  {% block header %}
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="{{ club_name }} home">
+        <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <rect x="6" y="8" width="36" height="32" rx="3" fill="#fff" stroke="currentColor" stroke-width="2.5" transform="rotate(-4 24 24)"/>
+          <circle cx="18" cy="22" r="3.2" fill="currentColor"/><circle cx="30" cy="21" r="3.2" fill="currentColor"/>
+          <path d="M15 31 q9 -6 18 0" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M14 15 l7 3 M34 14 l-7 3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span>{{ club_name }}</span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="/draw" {% if active == 'draw' %}aria-current="page"{% endif %}>Draw</a>
+        <a href="/wall" {% if active == 'wall' %}aria-current="page"{% endif %}>Wall</a>
+        {% if member %}
+          <a href="/practice/new" {% if active == 'practice' %}aria-current="page"{% endif %}>Practice</a>
+          <a href="/room" {% if active == 'room' %}aria-current="page"{% endif %}>Room</a>
+          <a href="/me" {% if active == 'me' %}aria-current="page"{% endif %}>Me</a>
+          {% if member.is_editor %}<a href="/admin" {% if active == 'admin' %}aria-current="page"{% endif %}>Admin</a>{% endif %}
+        {% else %}
+          <a href="/how-it-works" {% if active == 'how' %}aria-current="page"{% endif %}>How it works</a>
+          <a href="/join" {% if active == 'join' %}aria-current="page"{% endif %}>Join</a>
+        {% endif %}
+      </nav>
+      <div class="header-tools">
+        <button class="icon-btn" type="button" id="shortcuts-btn" aria-label="Keyboard shortcuts" title="Keyboard shortcuts">
+          <span aria-hidden="true" style="font-weight:700;font-size:1.1rem">?</span>
+        </button>
+        <button class="icon-btn" type="button" id="theme-btn" aria-pressed="false" title="Night mode">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <span class="sr-only">Night mode</span>
+        </button>
+        {% if member %}
+          <button class="btn small" type="button" id="logout-btn">Log out</button>
+        {% else %}
+          <a class="btn small" href="/login">Log in</a>
+        {% endif %}
+      </div>
+    </div>
+  </header>
+  {% endblock %}
+
+  <main id="main" tabindex="-1" class="{% block main_class %}{% endblock %}">
+    {% block content %}{% endblock %}
+  </main>
+
+  {% block footer %}
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/how-it-works">How it works</a>
+        <a href="/ritual">The Ritual</a>
+        <a href="/learn">MUN 101</a>
+        <a href="/dress-check">Dress Check</a>
+        <a href="/credits">Credits</a>
+        <a href="/privacy">Privacy</a>
+        <a href="#" data-suggest>Suggest a change</a>
+      </nav>
+      <div>
+        <p class="easter" title="That's what MUN really stands for.">{{ copy('footer') }}</p>
+        <p class="small">{{ copy('definition') }}</p>
+      </div>
+    </div>
+  </footer>
+  {% endblock %}
+
+  {% block fab %}<button class="btn suggest-fab" type="button" data-suggest aria-label="Suggest a change">💡 <span class="fab-label">Suggest a change</span></button>{% endblock %}
+  <div class="toast-stack" id="toasts" aria-live="polite" aria-atomic="false"></div>
+  <div class="sr-only" id="live" aria-live="polite" aria-atomic="true"></div>
+
+  <script type="application/json" id="page-data">{{ page_data|default({}, true)|tojson }}</script>
+  <script type="application/json" id="copy-data">{{ all_copy()|tojson }}</script>
+  <script type="module" src="/static/js/app.js"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

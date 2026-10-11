@@ -1,0 +1,14 @@
+{
+ "note": "Editors can add committees in Admin. These are the starting list.",
+ "committees": [
+  {"id": "disec", "name": "GA First Committee (DISEC)"},
+  {"id": "unsc", "name": "Security Council"},
+  {"id": "who", "name": "WHO"},
+  {"id": "unep", "name": "UNEP"},
+  {"id": "hrc", "name": "Human Rights Council"},
+  {"id": "ecosoc", "name": "ECOSOC"},
+  {"id": "unicef", "name": "UNICEF"},
+  {"id": "unesco", "name": "UNESCO"},
+  {"id": "crisis", "name": "Crisis (fictional)"}
+ ]
+}

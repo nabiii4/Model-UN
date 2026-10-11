@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block styles %}<link rel="stylesheet" href="/static/css/pages/human.css">{% endblock %}
+{% block body_class %}human-page{% endblock %}
+{% block content %}
+<div class="handoff" id="handoff">
+  <h1 class="handoff-text" id="handoff-text">{{ page_data.handoff_text }}</h1>
+  {% if page_data.handoff_credit %}<p class="handoff-credit">{{ page_data.handoff_credit }}</p>{% endif %}
+  <p class="handoff-sub muted">{{ copy('handoff.subline') }}</p>
+  <div class="human-card sticky" id="human-card"></div>
+  <p class="lock-line hand" id="lock-line" role="status" hidden></p>
+  <div class="btn-row handoff-buttons" id="handoff-buttons">
+    <button class="btn primary big" type="button" id="found-btn">🙋 I found someone</button>
+    <button class="btn big" type="button" id="odd-btn" hidden>🤖 I'm the odd one out</button>
+    <button class="btn big" type="button" id="home-btn" hidden>🏠 I'm practicing at home</button>
+  </div>
+  <p class="small muted" id="home-note" hidden>{{ copy('handoff.home') }}</p>
+</div>
+
+<section class="human-round panel" id="human-round" hidden aria-labelledby="hr-title">
+  <h2 id="hr-title" class="hand">Human Round</h2>
+  <p class="muted small">No AI here. Just two people and a timer.</p>
+  <div class="grid-2">
+    <div class="field"><label for="name-a">Speaker A</label><input type="text" id="name-a" maxlength="30"></div>
+    <div class="field"><label for="name-b">Speaker B (your partner, optional)</label><input type="text" id="name-b" maxlength="30" placeholder="Their first name"></div>
+  </div>
+  <details class="timer-settings">
+    <summary>Change the times</summary>
+    <div class="seg-grid" id="seg-grid"></div>
+  </details>
+  <div class="big-timer" id="big-timer" role="timer" aria-live="off">
+    <div class="who-now" id="who-now"></div>
+    <div class="clock" id="clock">1:00</div>
+    <div class="seg-dots" id="seg-dots"></div>
+  </div>
+  <p class="sr-only" id="timer-live" aria-live="polite"></p>
+  <div class="btn-row timer-buttons">
+    <button class="btn primary big" type="button" id="start-pause">▶ Start</button>
+    <button class="btn big" type="button" id="next-seg">Next speaker ⏭</button>
+    <button class="btn big" type="button" id="swap">⇄ Swap</button>
+    <button class="btn" type="button" id="reset">Reset</button>
+  </div>
+  <div id="hr-done" hidden></div>
+</section>
+{% endblock %}
+{% block scripts %}<script type="module" src="/static/js/human.js"></script>{% endblock %}

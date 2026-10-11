@@ -1,0 +1,31 @@
+{
+ "note": "Editors can add topics in Admin. Each topic belongs to one committee.",
+ "topics": [
+  {"committee": "disec", "title": "Autonomous weapons"},
+  {"committee": "disec", "title": "Cyberattacks on civilian infrastructure"},
+  {"committee": "disec", "title": "Space debris and security"},
+  {"committee": "unsc", "title": "Peacekeeping mandates"},
+  {"committee": "unsc", "title": "Making sanctions work"},
+  {"committee": "unsc", "title": "Protecting humanitarian aid workers"},
+  {"committee": "who", "title": "Pandemic preparedness"},
+  {"committee": "who", "title": "Antibiotic resistance"},
+  {"committee": "who", "title": "Mental health care for young people"},
+  {"committee": "unep", "title": "Plastic pollution"},
+  {"committee": "unep", "title": "Climate migration"},
+  {"committee": "unep", "title": "Protecting ocean biodiversity"},
+  {"committee": "hrc", "title": "Digital privacy and surveillance"},
+  {"committee": "hrc", "title": "Press freedom"},
+  {"committee": "hrc", "title": "Rights of refugees"},
+  {"committee": "ecosoc", "title": "AI and the future of work"},
+  {"committee": "ecosoc", "title": "Global food security"},
+  {"committee": "ecosoc", "title": "Access to clean water"},
+  {"committee": "unicef", "title": "Education in conflict zones"},
+  {"committee": "unicef", "title": "Child online safety"},
+  {"committee": "unicef", "title": "Ending child labor"},
+  {"committee": "unesco", "title": "Protecting cultural heritage in conflict"},
+  {"committee": "unesco", "title": "Misinformation and media literacy"},
+  {"committee": "unesco", "title": "Internet access in schools"},
+  {"committee": "crisis", "title": "An island nation's flooding emergency"},
+  {"committee": "crisis", "title": "A solar storm knocks out global GPS"}
+ ]
+}

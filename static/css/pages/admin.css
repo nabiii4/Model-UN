@@ -1,0 +1,16 @@
+.passcode-row { display: flex; gap: 8px; max-width: 480px; }
+.admin-table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+.admin-table th, .admin-table td { text-align: left; padding: 8px 6px; border-bottom: 1px dashed var(--ink-soft); vertical-align: top; }
+.admin-table th { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--ink-soft); }
+.table-wrap { overflow-x: auto; }
+.mod-item { display: grid; grid-template-columns: 120px 1fr auto; gap: 14px; align-items: start; padding: 12px 0; border-bottom: 1px dashed var(--ink-soft); }
+.mod-item img { width: 120px; height: 120px; object-fit: contain; background: #fff; border: 1px solid var(--border); border-radius: 6px; }
+.settings-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 6px 22px; }
+.days { display: flex; gap: 6px; flex-wrap: wrap; }
+.copy-row { display: grid; grid-template-columns: 220px 1fr; gap: 10px; align-items: start; margin-bottom: 8px; }
+.copy-row code { font-size: .8rem; word-break: break-all; }
+.status-ok { color: var(--friend-text); font-weight: 700; }
+.status-bad { color: var(--nightmare-text); font-weight: 700; }
+.chart svg { width: 100%; height: 220px; }
+.committee-block { border: 2px dashed var(--ink-soft); border-radius: 12px; padding: 10px; margin-bottom: 10px; }
+@media (max-width: 700px) { .mod-item { grid-template-columns: 1fr; } .copy-row { grid-template-columns: 1fr; } }

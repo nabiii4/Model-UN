@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500"><defs><filter id="w"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter></defs><rect width="400" height="500" fill="#fffdf8"/><g fill="none" stroke="#2a2d33" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#w)">
+<path d="M200 80 q-88 0 -88 100 q0 96 88 100 q88 -4 88 -100 q0 -100 -88 -100z" fill="#fff"/>
+<circle cx="164" cy="168" r="34" fill="#fff"/><circle cx="236" cy="168" r="34" fill="#fff"/>
+<circle cx="164" cy="168" r="10" fill="#2a2d33"/><circle cx="236" cy="168" r="10" fill="#2a2d33"/>
+<path d="M130 122 l64 0 M206 122 l64 0"/>
+<circle cx="200" cy="240" r="6" fill="#2a2d33"/>
+<path d="M96 500 q6 -150 64 -170 l80 0 q58 20 64 170z" fill="#15171c"/>
+<path d="M176 340 l24 14 l24 -14 l0 22 l-24 -14 l-24 14z" fill="#fff"/>
+<path d="M60 120 l-20 0 M60 160 l-24 6 M340 120 l20 0 M340 160 l24 6" stroke-dasharray="4 8"/>
+<text x="200" y="460" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#fff" stroke="none">. . .</text>
+</g></svg>

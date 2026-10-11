@@ -1,0 +1,64 @@
+/* Design tokens (BUILD_PROMPT.md section 16.2). Change colors here, and the whole site follows. */
+@font-face {
+  font-family: "Patrick Hand";
+  src: url("/static/fonts/patrick-hand-latin-400-normal.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/static/fonts/atkinson-hyperlegible-latin-400-normal.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/static/fonts/atkinson-hyperlegible-latin-700-normal.woff2") format("woff2");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/static/fonts/atkinson-hyperlegible-latin-400-italic.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+
+:root {
+  --paper: #FBF8F1;        /* page background: notebook paper */
+  --paper-line: #DCE6F2;   /* faint ruled lines */
+  --ink: #23262B;          /* graphite text */
+  --ink-soft: #5B616B;
+  --blue: #2B6CB0;         /* primary actions (not the official UN blue) */
+  --blue-soft: #DCEAF8;
+  --highlighter: #FFE45C;  /* highlights, focus glow */
+  --nightmare: #D64545;    /* scary accents, high heat */
+  --friend: #2F9E67;       /* befriended, success */
+  --sticky: #FFF3A6;       /* sticky notes */
+  --tape: rgba(255, 236, 170, .75);
+  --radius: 14px;
+  --shadow: 0 2px 0 rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.08);
+
+  /* Extra tokens (see DECISIONS.md): text-safe versions of the accent colors (contrast >= 4.5:1). */
+  --card: #FFFFFF;
+  --nightmare-text: #B42F2F;
+  --friend-text: #1E7A4C;
+  --on-blue: #FFFFFF;
+  --border: #23262B;
+  --muted-bg: #F1ECE0;
+  --font-hand: "Patrick Hand", "Comic Sans MS", "Segoe Print", cursive;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  --header-h: 60px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #15171C; --paper-line: #23314A; --ink: #ECEEF2; --ink-soft: #A9B0BC;
+    --blue: #6FA8FF; --blue-soft: #1D2B44; --sticky: #3A3620;
+    --card: #1E2129; --nightmare-text: #FF8A8A; --friend-text: #6FD8A4; --on-blue: #0B1220;
+    --border: #A9B0BC; --muted-bg: #22252D; --tape: rgba(200, 180, 110, .35);
+    --shadow: 0 2px 0 rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.4);
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #15171C; --paper-line: #23314A; --ink: #ECEEF2; --ink-soft: #A9B0BC;
+  --blue: #6FA8FF; --blue-soft: #1D2B44; --sticky: #3A3620;
+  --card: #1E2129; --nightmare-text: #FF8A8A; --friend-text: #6FD8A4; --on-blue: #0B1220;
+  --border: #A9B0BC; --muted-bg: #22252D; --tape: rgba(200, 180, 110, .35);
+  --shadow: 0 2px 0 rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.4);
+}

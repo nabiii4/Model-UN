@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block styles %}<link rel="stylesheet" href="/static/css/pages/welcome.css">{% endblock %}
+{% block content %}
+<section class="hero" aria-labelledby="hero-title">
+  <div class="sheet">
+    <h1 id="hero-title">{{ copy('welcome.headline') }}</h1>
+    <p class="lead">{{ copy('welcome.subtext') }}</p>
+    <p class="definition">{{ copy('definition') }}</p>
+  </div>
+</section>
+
+<section id="returning" class="returning panel" hidden aria-live="polite"></section>
+
+<section class="doors-wrap" aria-labelledby="doors-title">
+  <h2 id="doors-title" class="sr-only">Choose your path</h2>
+  <div class="doors">
+    <a class="door" href="/draw?path=paper">
+      <span class="door-icon" aria-hidden="true">📄</span>
+      <span class="door-title">Paper</span>
+      <strong>{{ copy('welcome.door_paper_title') }}</strong>
+      <span class="muted">{{ copy('welcome.door_paper_sub') }}</span>
+    </a>
+    <a class="door" href="/draw?path=canvas">
+      <span class="door-icon" aria-hidden="true">💻</span>
+      <span class="door-title">Laptop</span>
+      <strong>{{ copy('welcome.door_laptop_title') }}</strong>
+      <span class="muted">{{ copy('welcome.door_laptop_sub') }}</span>
+    </a>
+    <button class="door" type="button" id="door-sit">
+      <span class="door-icon" aria-hidden="true">🪑</span>
+      <span class="door-title">Just sit</span>
+      <strong>{{ copy('welcome.door_sit_title') }}</strong>
+      <span class="muted">{{ copy('welcome.door_sit_sub') }}</span>
+    </button>
+  </div>
+  <p class="center under-doors hand">{{ copy('welcome.under_doors') }}</p>
+</section>
+
+<section id="demo" class="demo panel" hidden aria-labelledby="demo-title">
+  <div class="demo-head">
+    <h2 id="demo-title">A demo round</h2>
+    <div class="btn-row">
+      <button class="btn small" type="button" id="demo-skip">Skip to the end</button>
+      <button class="btn small ghost" type="button" id="demo-close">Close</button>
+    </div>
+  </div>
+  <p class="muted small" id="demo-sub"></p>
+  <div class="demo-body">
+    <div class="demo-stage">
+      <div class="puppet" id="demo-puppet"></div>
+      <span class="placard" id="demo-placard"></span>
+    </div>
+    <div class="demo-transcript" id="demo-transcript" aria-live="polite"></div>
+  </div>
+  <div id="demo-end" hidden></div>
+</section>
+
+<section class="pulse" aria-labelledby="pulse-title">
+  <h2 id="pulse-title" class="hand">Club Pulse <span class="small muted">(this week, everyone together)</span></h2>
+  <p id="pulse-text" class="pulse-text">Counting…</p>
+</section>
+
+<section class="wall-preview" aria-labelledby="wp-title">
+  <div class="wp-head">
+    <h2 id="wp-title">From the Nightmare Wall</h2>
+    <a href="/wall" class="btn">See the Wall →</a>
+  </div>
+  <div class="wall-grid" id="wall-preview"></div>
+</section>
+{% endblock %}
+{% block scripts %}<script type="module" src="/static/js/welcome.js"></script>{% endblock %}

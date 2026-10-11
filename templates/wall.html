@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block styles %}<link rel="stylesheet" href="/static/css/pages/wall.css">{% endblock %}
+{% block content %}
+<div class="wall-head">
+  <div>
+    <h1>The Nightmare Wall</h1>
+    <p class="muted">Practice against anyone's nightmare. One person's nightmare becomes the reason someone else gets better.</p>
+  </div>
+  <a class="btn primary" href="/draw">Draw a new one</a>
+</div>
+<form class="filters panel" id="filters" role="search" aria-label="Filter the Wall">
+  <div class="field search-field">
+    <label for="q">Search by name or trait</label>
+    <input type="search" id="q" name="q" maxlength="60" placeholder="Try: interrupts, stare, suit">
+  </div>
+  <div class="field">
+    <label for="difficulty">Difficulty</label>
+    <select id="difficulty" name="difficulty">
+      <option value="">Any</option><option value="1">1 · Friendly sparring</option><option value="2">2 · Polite but firm</option>
+      <option value="3">3 · Real committee</option><option value="4">4 · Tough room</option><option value="5">5 · Nightmare</option>
+    </select>
+  </div>
+  <div class="field">
+    <label for="source">Source</label>
+    <select id="source" name="source"><option value="">All</option><option value="drawing">Drawings</option><option value="built">Built in The Blank</option><option value="example">Examples</option></select>
+  </div>
+  <div class="field">
+    <label for="trait">Trait</label>
+    <select id="trait" name="trait"><option value="">Any trait</option></select>
+  </div>
+  <div class="field">
+    <label for="sort">Sort</label>
+    <select id="sort" name="sort"><option value="random">Random</option><option value="new">Newest</option></select>
+  </div>
+  {% if member %}
+  <div class="field checks">
+    <label class="check"><input type="checkbox" id="not-tried" name="not_tried"> Not tried yet</label>
+    <label class="check"><input type="checkbox" id="befriended" name="befriended"> Befriended</label>
+  </div>
+  {% endif %}
+</form>
+<p id="trait-chips" class="selected-traits"></p>
+<p class="muted small" id="wall-count" role="status"></p>
+<h2 class="sr-only">All nightmares</h2>
+<div class="wall-grid" id="wall-grid"></div>
+<div class="btn-row center-row"><button class="btn" type="button" id="more" hidden>Show more</button></div>
+{% endblock %}
+{% block scripts %}<script type="module" src="/static/js/wall.js"></script>{% endblock %}

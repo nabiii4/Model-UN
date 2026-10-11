@@ -1,0 +1,2008 @@
+{
+ "version": 1,
+ "note": "Editors can add options here without changing code. Look options never change personality or difficulty.",
+ "options": [
+  {
+   "id": "interrupts",
+   "label": "Interrupts",
+   "category": "tactic",
+   "description": "Cuts in with Points of Information while you're still talking."
+  },
+  {
+   "id": "demands_evidence",
+   "label": "Demands evidence",
+   "category": "tactic",
+   "description": "Asks \"Source?\" whenever you make a claim."
+  },
+  {
+   "id": "rapid_stats",
+   "label": "Rapid stats",
+   "category": "tactic",
+   "description": "Throws quick, general numbers at you to sound certain."
+  },
+  {
+   "id": "thought_experiments",
+   "label": "Thought experiments",
+   "category": "tactic",
+   "description": "Answers with \"Imagine...\" hypotheticals."
+  },
+  {
+   "id": "rhetorical_questions",
+   "label": "Rhetorical questions",
+   "category": "tactic",
+   "description": "Asks questions that answer themselves."
+  },
+  {
+   "id": "slippery_slope",
+   "label": "Slippery slope",
+   "category": "tactic",
+   "description": "Warns where your idea \"leads\" if you keep going."
+  },
+  {
+   "id": "emotional_appeal",
+   "label": "Emotional appeal",
+   "category": "tactic",
+   "description": "Tells short human stories to win hearts."
+  },
+  {
+   "id": "history_appeal",
+   "label": "History appeal",
+   "category": "tactic",
+   "description": "Says \"History shows...\" to back its point."
+  },
+  {
+   "id": "cites_treaties",
+   "label": "Cites treaties",
+   "category": "tactic",
+   "description": "Refers to treaties and past UN resolutions in general terms."
+  },
+  {
+   "id": "reframes_question",
+   "label": "Reframes the question",
+   "category": "tactic",
+   "description": "Changes what the question is about."
+  },
+  {
+   "id": "turns_point_around",
+   "label": "Turns your point around",
+   "category": "tactic",
+   "description": "Uses your own point against you."
+  },
+  {
+   "id": "yes_no_traps",
+   "label": "Yes-or-no traps",
+   "category": "tactic",
+   "description": "Demands \"Yes or no, delegate?\" on tricky questions."
+  },
+  {
+   "id": "pins_down_dodges",
+   "label": "Pins down dodges",
+   "category": "tactic",
+   "description": "Won't let a dodge slide. Asks again, politely."
+  },
+  {
+   "id": "procedural_objections",
+   "label": "Procedural objections",
+   "category": "tactic",
+   "description": "Raises Points of Order on informal language."
+  },
+  {
+   "id": "long_answers",
+   "label": "Long answers",
+   "category": "tactic",
+   "description": "Talks long to eat time (still within word limits)."
+  },
+  {
+   "id": "changes_subject",
+   "label": "Changes the subject",
+   "category": "tactic",
+   "description": "Pivots to a topic where it is stronger."
+  },
+  {
+   "id": "flattery_then_attack",
+   "label": "Flattery, then attack",
+   "category": "tactic",
+   "description": "Compliments you first, then strikes."
+  },
+  {
+   "id": "devils_advocate",
+   "label": "Devil's advocate",
+   "category": "tactic",
+   "description": "Argues the opposite on purpose to test you."
+  },
+  {
+   "id": "finds_contradictions",
+   "label": "Finds contradictions",
+   "category": "tactic",
+   "description": "Says \"Earlier you said...\" when you contradict yourself."
+  },
+  {
+   "id": "analogies",
+   "label": "Analogies",
+   "category": "tactic",
+   "description": "Explains everything with comparisons."
+  },
+  {
+   "id": "demands_specifics",
+   "label": "Demands specifics",
+   "category": "tactic",
+   "description": "Asks \"Which country? Which year?\" when you're vague."
+  },
+  {
+   "id": "quotes_you_back",
+   "label": "Quotes you back",
+   "category": "tactic",
+   "description": "Repeats your exact words back to you."
+  },
+  {
+   "id": "so_what",
+   "label": "So what?",
+   "category": "tactic",
+   "description": "Asks \"Why does that matter?\""
+  },
+  {
+   "id": "side_deals",
+   "label": "Side deals",
+   "category": "tactic",
+   "description": "Offers bloc deals and trades."
+  },
+  {
+   "id": "veto_threat",
+   "label": "Veto threat",
+   "category": "tactic",
+   "description": "Threatens a veto (Security Council style)."
+  },
+  {
+   "id": "compromise_offers",
+   "label": "Compromise offers",
+   "category": "tactic",
+   "description": "Offers a middle ground to pull you in."
+  },
+  {
+   "id": "time_pressure",
+   "label": "Time pressure",
+   "category": "tactic",
+   "description": "Says \"We're running out of time, delegate.\""
+  },
+  {
+   "id": "silent_treatment",
+   "label": "Silent treatment",
+   "category": "tactic",
+   "description": "Uses long pauses that make you fill the silence."
+  },
+  {
+   "id": "mirror",
+   "label": "Mirror",
+   "category": "tactic",
+   "description": "Repeats your idea back, slightly twisted."
+  },
+  {
+   "id": "with_all_due_respect",
+   "label": "With all due respect",
+   "category": "tactic",
+   "description": "Uses polite openers before hard hits."
+  },
+  {
+   "id": "worst_case",
+   "label": "Worst case",
+   "category": "tactic",
+   "description": "Paints the worst-case outcome of your plan."
+  },
+  {
+   "id": "cost_focus",
+   "label": "Cost focus",
+   "category": "tactic",
+   "description": "Asks \"Who pays for this?\""
+  },
+  {
+   "id": "sovereignty_focus",
+   "label": "Sovereignty focus",
+   "category": "tactic",
+   "description": "Says \"That interferes with our sovereignty.\""
+  },
+  {
+   "id": "human_rights_focus",
+   "label": "Human rights focus",
+   "category": "tactic",
+   "description": "Puts human rights at the center of every answer."
+  },
+  {
+   "id": "security_focus",
+   "label": "Security focus",
+   "category": "tactic",
+   "description": "Puts safety and security at the center of every answer."
+  },
+  {
+   "id": "outdated_data",
+   "label": "Outdated data",
+   "category": "tactic",
+   "description": "Claims \"That number is old.\""
+  },
+  {
+   "id": "calm",
+   "label": "Calm",
+   "category": "temperament",
+   "description": "Never rattled; speaks evenly."
+  },
+  {
+   "id": "impatient",
+   "label": "Impatient",
+   "category": "temperament",
+   "description": "Wants answers now."
+  },
+  {
+   "id": "cheerful",
+   "label": "Cheerful",
+   "category": "temperament",
+   "description": "Upbeat and friendly, even when disagreeing."
+  },
+  {
+   "id": "cold",
+   "label": "Cold",
+   "category": "temperament",
+   "description": "Distant and businesslike."
+  },
+  {
+   "id": "theatrical",
+   "label": "Theatrical",
+   "category": "temperament",
+   "description": "Big gestures, dramatic delivery."
+  },
+  {
+   "id": "smug",
+   "label": "Smug",
+   "category": "temperament",
+   "description": "Acts like it already won."
+  },
+  {
+   "id": "stern",
+   "label": "Stern",
+   "category": "temperament",
+   "description": "Serious and strict."
+  },
+  {
+   "id": "sarcastic_light",
+   "label": "Lightly sarcastic",
+   "category": "temperament",
+   "description": "Dry, gentle teasing about ideas (never about people)."
+  },
+  {
+   "id": "overly_polite",
+   "label": "Overly polite",
+   "category": "temperament",
+   "description": "Extremely formal courtesy."
+  },
+  {
+   "id": "dramatic",
+   "label": "Dramatic",
+   "category": "temperament",
+   "description": "Treats every point like a big deal."
+  },
+  {
+   "id": "deadpan",
+   "label": "Deadpan",
+   "category": "temperament",
+   "description": "Flat, expressionless delivery."
+  },
+  {
+   "id": "competitive",
+   "label": "Competitive",
+   "category": "temperament",
+   "description": "Hates to lose a point."
+  },
+  {
+   "id": "curious",
+   "label": "Curious",
+   "category": "temperament",
+   "description": "Asks lots of genuine questions."
+  },
+  {
+   "id": "skeptical",
+   "label": "Skeptical",
+   "category": "temperament",
+   "description": "Doubts everything until proven."
+  },
+  {
+   "id": "grumpy",
+   "label": "Grumpy",
+   "category": "temperament",
+   "description": "A little cranky, but fair."
+  },
+  {
+   "id": "enthusiastic",
+   "label": "Enthusiastic",
+   "category": "temperament",
+   "description": "Excited about every idea."
+  },
+  {
+   "id": "mysterious",
+   "label": "Mysterious",
+   "category": "temperament",
+   "description": "Says little; hard to read."
+  },
+  {
+   "id": "bossy",
+   "label": "Bossy",
+   "category": "temperament",
+   "description": "Likes to take charge of the room."
+  },
+  {
+   "id": "laid_back",
+   "label": "Laid-back",
+   "category": "temperament",
+   "description": "Relaxed and casual."
+  },
+  {
+   "id": "eccentric",
+   "label": "Eccentric",
+   "category": "temperament",
+   "description": "Quirky and unpredictable."
+  },
+  {
+   "id": "never_blinks",
+   "label": "Never blinks",
+   "category": "quirk",
+   "description": "Stares without blinking and pauses dramatically before replying."
+  },
+  {
+   "id": "taps_pen",
+   "label": "Taps pen",
+   "category": "quirk",
+   "description": "Taps a pen while thinking."
+  },
+  {
+   "id": "adjusts_tie",
+   "label": "Adjusts tie",
+   "category": "quirk",
+   "description": "Straightens its tie before big points."
+  },
+  {
+   "id": "says_relatively_speaking",
+   "label": "Says \"relatively speaking\"",
+   "category": "quirk",
+   "description": "Starts points with \"Relatively speaking...\""
+  },
+  {
+   "id": "speaks_in_questions",
+   "label": "Speaks in questions",
+   "category": "quirk",
+   "description": "Turns statements into questions."
+  },
+  {
+   "id": "big_words_then_explains",
+   "label": "Big words, then explains",
+   "category": "quirk",
+   "description": "Uses a big word, then explains it simply."
+  },
+  {
+   "id": "counts_on_fingers",
+   "label": "Counts on fingers",
+   "category": "quirk",
+   "description": "Lists points as \"One... two... three...\""
+  },
+  {
+   "id": "dramatic_pauses",
+   "label": "Dramatic pauses",
+   "category": "quirk",
+   "description": "Pauses... for effect."
+  },
+  {
+   "id": "whispers_key_points",
+   "label": "Whispers key points",
+   "category": "quirk",
+   "description": "Lowers its voice for the important part."
+  },
+  {
+   "id": "laughs_at_own_jokes",
+   "label": "Laughs at own jokes",
+   "category": "quirk",
+   "description": "Chuckles at its own clever lines."
+  },
+  {
+   "id": "third_person_formal",
+   "label": "Third-person formal",
+   "category": "quirk",
+   "description": "Always says \"the delegate\" instead of \"you\" or \"I\"."
+  },
+  {
+   "id": "checks_watch",
+   "label": "Checks watch",
+   "category": "quirk",
+   "description": "Glances at its watch to make you hurry."
+  },
+  {
+   "id": "shuffles_papers",
+   "label": "Shuffles papers",
+   "category": "quirk",
+   "description": "Rustles a stack of papers while you talk."
+  },
+  {
+   "id": "raises_placard_constantly",
+   "label": "Raises placard constantly",
+   "category": "quirk",
+   "description": "Its placard is always up."
+  },
+  {
+   "id": "proverbs",
+   "label": "Proverbs",
+   "category": "quirk",
+   "description": "Uses old sayings to make points."
+  },
+  {
+   "id": "sports_metaphors",
+   "label": "Sports metaphors",
+   "category": "quirk",
+   "description": "Talks about debates like games."
+  },
+  {
+   "id": "cooking_metaphors",
+   "label": "Cooking metaphors",
+   "category": "quirk",
+   "description": "Describes policy like recipes."
+  },
+  {
+   "id": "space_metaphors",
+   "label": "Space metaphors",
+   "category": "quirk",
+   "description": "Compares things to planets and rockets."
+  },
+  {
+   "id": "ends_with_question",
+   "label": "Ends with a question",
+   "category": "quirk",
+   "description": "Ends every turn with a question."
+  },
+  {
+   "id": "loves_acronyms",
+   "label": "Loves acronyms",
+   "category": "quirk",
+   "description": "Uses lots of acronyms (and explains them)."
+  },
+  {
+   "id": "slow_interesting",
+   "label": "Slow \"Interesting...\"",
+   "category": "quirk",
+   "description": "Says \"Interesting...\" slowly before disagreeing."
+  },
+  {
+   "id": "overly_formal_greetings",
+   "label": "Overly formal greetings",
+   "category": "quirk",
+   "description": "Opens with long, formal greetings."
+  },
+  {
+   "id": "rhymes_sometimes",
+   "label": "Rhymes sometimes",
+   "category": "quirk",
+   "description": "Sneaks in a rhyme now and then."
+  },
+  {
+   "id": "counts_seconds_aloud",
+   "label": "Counts seconds aloud",
+   "category": "quirk",
+   "description": "Reminds you how many seconds are left."
+  },
+  {
+   "id": "alloy",
+   "label": "Alloy",
+   "category": "voice",
+   "description": "Text-to-speech voice 'alloy'.",
+   "puppet": {
+    "slot": "tts_voice"
+   }
+  },
+  {
+   "id": "ash",
+   "label": "Ash",
+   "category": "voice",
+   "description": "Text-to-speech voice 'ash'.",
+   "puppet": {
+    "slot": "tts_voice"
+   }
+  },
+  {
+   "id": "ballad",
+   "label": "Ballad",
+   "category": "voice",
+   "description": "Text-to-speech voice 'ballad'.",
+   "puppet": {
+    "slot": "tts_voice"
+   }
+  },
+  {
+   "id": "coral",
+   "label": "Coral",
+   "category": "voice",
+   "description": "Text-to-speech voice 'coral'.",
+   "puppet": {
+    "slot": "tts_voice"
+   }
+  },
+  {
+   "id": "echo",
+   "label": "Echo",
+   "category": "voice",
+   "description": "Text-to-speech voice 'echo'.",
+   "puppet": {
+    "slot": "tts_voice"
+   }
+  },
+  {
+   "id": "fable",
+   "label": "Fable",
+   "category": "voice",
+   "description": "Text-to-speech voice 'fable'.",
+   "puppet": {
+    "slot": "tts_voice"
+   }
+  },
+  {
+   "id": "nova",
+   "label": "Nova",
+   "category": "voice",
+   "description": "Text-to-speech voice 'nova'.",
+   "puppet": {
+    "slot": "tts_voice"
+   }
+  },
+  {
+   "id": "onyx",
+   "label": "Onyx",
+   "category": "voice",
+   "description": "Text-to-speech voice 'onyx'.",
+   "puppet": {
+    "slot": "tts_voice"
+   }
+  },
+  {
+   "id": "sage",
+   "label": "Sage",
+   "category": "voice",
+   "description": "Text-to-speech voice 'sage'.",
+   "puppet": {
+    "slot": "tts_voice"
+   }
+  },
+  {
+   "id": "shimmer",
+   "label": "Shimmer",
+   "category": "voice",
+   "description": "Text-to-speech voice 'shimmer'.",
+   "puppet": {
+    "slot": "tts_voice"
+   }
+  },
+  {
+   "id": "verse",
+   "label": "Verse",
+   "category": "voice",
+   "description": "Text-to-speech voice 'verse'.",
+   "puppet": {
+    "slot": "tts_voice"
+   }
+  },
+  {
+   "id": "pace_slow",
+   "label": "Slow pace",
+   "category": "voice",
+   "description": "Speaks slowly.",
+   "puppet": {
+    "slot": "pace",
+    "value": "slow"
+   }
+  },
+  {
+   "id": "pace_normal",
+   "label": "Normal pace",
+   "category": "voice",
+   "description": "Speaks at a normal pace.",
+   "puppet": {
+    "slot": "pace",
+    "value": "normal"
+   }
+  },
+  {
+   "id": "pace_fast",
+   "label": "Fast pace",
+   "category": "voice",
+   "description": "Speaks quickly.",
+   "puppet": {
+    "slot": "pace",
+    "value": "fast"
+   }
+  },
+  {
+   "id": "pace_very_fast",
+   "label": "Very fast pace",
+   "category": "voice",
+   "description": "Speaks very quickly.",
+   "puppet": {
+    "slot": "pace",
+    "value": "very_fast"
+   }
+  },
+  {
+   "id": "energy_1",
+   "label": "Energy 1",
+   "category": "voice",
+   "description": "Energy level 1 of 5.",
+   "puppet": {
+    "slot": "energy",
+    "value": 1
+   }
+  },
+  {
+   "id": "energy_2",
+   "label": "Energy 2",
+   "category": "voice",
+   "description": "Energy level 2 of 5.",
+   "puppet": {
+    "slot": "energy",
+    "value": 2
+   }
+  },
+  {
+   "id": "energy_3",
+   "label": "Energy 3",
+   "category": "voice",
+   "description": "Energy level 3 of 5.",
+   "puppet": {
+    "slot": "energy",
+    "value": 3
+   }
+  },
+  {
+   "id": "energy_4",
+   "label": "Energy 4",
+   "category": "voice",
+   "description": "Energy level 4 of 5.",
+   "puppet": {
+    "slot": "energy",
+    "value": 4
+   }
+  },
+  {
+   "id": "energy_5",
+   "label": "Energy 5",
+   "category": "voice",
+   "description": "Energy level 5 of 5.",
+   "puppet": {
+    "slot": "energy",
+    "value": 5
+   }
+  },
+  {
+   "id": "tone_warm",
+   "label": "Warm tone",
+   "category": "voice",
+   "description": "Warm and friendly.",
+   "puppet": {
+    "slot": "tone_preset",
+    "value": "warm"
+   }
+  },
+  {
+   "id": "tone_crisp",
+   "label": "Crisp tone",
+   "category": "voice",
+   "description": "Crisp, clear, and precise.",
+   "puppet": {
+    "slot": "tone_preset",
+    "value": "crisp"
+   }
+  },
+  {
+   "id": "tone_booming",
+   "label": "Booming tone",
+   "category": "voice",
+   "description": "Loud and booming.",
+   "puppet": {
+    "slot": "tone_preset",
+    "value": "booming"
+   }
+  },
+  {
+   "id": "tone_soft",
+   "label": "Soft tone",
+   "category": "voice",
+   "description": "Soft and gentle.",
+   "puppet": {
+    "slot": "tone_preset",
+    "value": "soft"
+   }
+  },
+  {
+   "id": "tone_icy",
+   "label": "Icy tone",
+   "category": "voice",
+   "description": "Cool and icy.",
+   "puppet": {
+    "slot": "tone_preset",
+    "value": "icy"
+   }
+  },
+  {
+   "id": "tone_cheerful",
+   "label": "Cheerful tone",
+   "category": "voice",
+   "description": "Bright and cheerful.",
+   "puppet": {
+    "slot": "tone_preset",
+    "value": "cheerful"
+   }
+  },
+  {
+   "id": "tone_theatrical",
+   "label": "Theatrical tone",
+   "category": "voice",
+   "description": "Big and theatrical.",
+   "puppet": {
+    "slot": "tone_preset",
+    "value": "theatrical"
+   }
+  },
+  {
+   "id": "tone_monotone",
+   "label": "Monotone tone",
+   "category": "voice",
+   "description": "Flat and even.",
+   "puppet": {
+    "slot": "tone_preset",
+    "value": "monotone"
+   }
+  },
+  {
+   "id": "tone_whispery",
+   "label": "Whispery tone",
+   "category": "voice",
+   "description": "Quiet and breathy.",
+   "puppet": {
+    "slot": "tone_preset",
+    "value": "whispery"
+   }
+  },
+  {
+   "id": "tone_announcer",
+   "label": "Announcer tone",
+   "category": "voice",
+   "description": "Like a sports announcer.",
+   "puppet": {
+    "slot": "tone_preset",
+    "value": "announcer"
+   }
+  },
+  {
+   "id": "short_punchy",
+   "label": "Short and punchy",
+   "category": "speech_style",
+   "description": "Short, punchy sentences."
+  },
+  {
+   "id": "long_winding",
+   "label": "Long and winding",
+   "category": "speech_style",
+   "description": "Long, winding sentences (still within the word limit)."
+  },
+  {
+   "id": "academic",
+   "label": "Academic",
+   "category": "speech_style",
+   "description": "Sounds like a textbook."
+  },
+  {
+   "id": "casual_polite",
+   "label": "Casual but polite",
+   "category": "speech_style",
+   "description": "Relaxed, friendly words."
+  },
+  {
+   "id": "courtroom_formal",
+   "label": "Courtroom formal",
+   "category": "speech_style",
+   "description": "Speaks like a lawyer in court."
+  },
+  {
+   "id": "sports_commentator",
+   "label": "Sports commentator",
+   "category": "speech_style",
+   "description": "Narrates the debate like a game."
+  },
+  {
+   "id": "news_anchor",
+   "label": "News anchor",
+   "category": "speech_style",
+   "description": "Calm, clear, headline style."
+  },
+  {
+   "id": "storyteller",
+   "label": "Storyteller",
+   "category": "speech_style",
+   "description": "Makes points through little stories."
+  },
+  {
+   "id": "professor",
+   "label": "Professor",
+   "category": "speech_style",
+   "description": "Explains like a teacher."
+  },
+  {
+   "id": "robot_precise",
+   "label": "Robot-precise",
+   "category": "speech_style",
+   "description": "Exact, numbered, very precise."
+  },
+  {
+   "id": "sudden_poi",
+   "label": "Sudden POI",
+   "category": "pressure_move",
+   "description": "Cuts in with a Point of Information."
+  },
+  {
+   "id": "time_cut",
+   "label": "Time cut",
+   "category": "pressure_move",
+   "description": "Says \"10 seconds, delegate.\""
+  },
+  {
+   "id": "source_demand",
+   "label": "Source demand",
+   "category": "pressure_move",
+   "description": "Demands a source right now."
+  },
+  {
+   "id": "yes_or_no",
+   "label": "Yes or no",
+   "category": "pressure_move",
+   "description": "Demands a one-word answer."
+  },
+  {
+   "id": "define_term",
+   "label": "Define that term",
+   "category": "pressure_move",
+   "description": "Says \"Define that term.\""
+  },
+  {
+   "id": "one_sentence_summary",
+   "label": "One-sentence summary",
+   "category": "pressure_move",
+   "description": "Asks you to sum up your point in one sentence."
+  },
+  {
+   "id": "name_an_ally",
+   "label": "Name an ally",
+   "category": "pressure_move",
+   "description": "Says \"Name one country that agrees.\""
+  },
+  {
+   "id": "plan_b",
+   "label": "Plan B",
+   "category": "pressure_move",
+   "description": "Asks \"What's your plan B?\""
+  },
+  {
+   "id": "out_of_order",
+   "label": "Out of order",
+   "category": "pressure_move",
+   "description": "Calls your remark out of order."
+  },
+  {
+   "id": "will_you_yield",
+   "label": "Will you yield?",
+   "category": "pressure_move",
+   "description": "Asks \"Will the delegate yield?\""
+  },
+  {
+   "id": "real_examples",
+   "label": "Real examples",
+   "category": "weakness",
+   "description": "Loses ground when you use one real example."
+  },
+  {
+   "id": "calm_silence",
+   "label": "Calm silence",
+   "category": "weakness",
+   "description": "Gets uneasy when you stay calm and quiet."
+  },
+  {
+   "id": "precise_numbers",
+   "label": "Precise numbers",
+   "category": "weakness",
+   "description": "Its numbers are vague; ask where they come from."
+  },
+  {
+   "id": "one_argument_only",
+   "label": "One argument only",
+   "category": "weakness",
+   "description": "Only has one argument; take it apart and it's stuck."
+  },
+  {
+   "id": "ignores_people",
+   "label": "Ignores people",
+   "category": "weakness",
+   "description": "Forgets about ordinary people; bring them up."
+  },
+  {
+   "id": "long_winded",
+   "label": "Long-winded",
+   "category": "weakness",
+   "description": "Runs long; a short, clear answer beats it."
+  },
+  {
+   "id": "contradicts_under_pressure",
+   "label": "Contradicts under pressure",
+   "category": "weakness",
+   "description": "Contradicts itself when pushed."
+  },
+  {
+   "id": "no_solutions",
+   "label": "No solutions",
+   "category": "weakness",
+   "description": "Criticizes but has no plan; ask for its solution."
+  },
+  {
+   "id": "likes_compromise",
+   "label": "Likes compromise",
+   "category": "weakness",
+   "description": "Can't resist a fair deal."
+  },
+  {
+   "id": "sincere_compliments",
+   "label": "Sincere compliments",
+   "category": "weakness",
+   "description": "Softens when you're sincere and specific."
+  },
+  {
+   "id": "ordinary_people_question",
+   "label": "Ordinary people question",
+   "category": "weakness",
+   "description": "Struggles with \"What does this mean for ordinary people?\""
+  },
+  {
+   "id": "runs_out_of_steam",
+   "label": "Runs out of steam",
+   "category": "weakness",
+   "description": "Runs out of steam if you calmly keep going."
+  },
+  {
+   "id": "style:sketch",
+   "label": "Sketch",
+   "category": "look",
+   "description": "Look: style = sketch. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "style",
+    "value": "sketch"
+   }
+  },
+  {
+   "id": "style:marker",
+   "label": "Marker",
+   "category": "look",
+   "description": "Look: style = marker. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "style",
+    "value": "marker"
+   }
+  },
+  {
+   "id": "style:colored",
+   "label": "Colored",
+   "category": "look",
+   "description": "Look: style = colored. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "style",
+    "value": "colored"
+   }
+  },
+  {
+   "id": "hair:bald",
+   "label": "Bald",
+   "category": "look",
+   "description": "Look: hair = bald. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "hair",
+    "value": "bald"
+   }
+  },
+  {
+   "id": "hair:slicked_back",
+   "label": "Slicked back",
+   "category": "look",
+   "description": "Look: hair = slicked back. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "hair",
+    "value": "slicked_back"
+   }
+  },
+  {
+   "id": "hair:wild",
+   "label": "Wild",
+   "category": "look",
+   "description": "Look: hair = wild. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "hair",
+    "value": "wild"
+   }
+  },
+  {
+   "id": "hair:curly",
+   "label": "Curly",
+   "category": "look",
+   "description": "Look: hair = curly. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "hair",
+    "value": "curly"
+   }
+  },
+  {
+   "id": "hair:coily",
+   "label": "Coily",
+   "category": "look",
+   "description": "Look: hair = coily. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "hair",
+    "value": "coily"
+   }
+  },
+  {
+   "id": "hair:buzz",
+   "label": "Buzz",
+   "category": "look",
+   "description": "Look: hair = buzz. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "hair",
+    "value": "buzz"
+   }
+  },
+  {
+   "id": "hair:bun",
+   "label": "Bun",
+   "category": "look",
+   "description": "Look: hair = bun. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "hair",
+    "value": "bun"
+   }
+  },
+  {
+   "id": "hair:ponytail",
+   "label": "Ponytail",
+   "category": "look",
+   "description": "Look: hair = ponytail. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "hair",
+    "value": "ponytail"
+   }
+  },
+  {
+   "id": "hair:braids",
+   "label": "Braids",
+   "category": "look",
+   "description": "Look: hair = braids. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "hair",
+    "value": "braids"
+   }
+  },
+  {
+   "id": "hair:afro",
+   "label": "Afro",
+   "category": "look",
+   "description": "Look: hair = afro. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "hair",
+    "value": "afro"
+   }
+  },
+  {
+   "id": "hair:long_straight",
+   "label": "Long straight",
+   "category": "look",
+   "description": "Look: hair = long straight. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "hair",
+    "value": "long_straight"
+   }
+  },
+  {
+   "id": "hair:locs",
+   "label": "Locs",
+   "category": "look",
+   "description": "Look: hair = locs. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "hair",
+    "value": "locs"
+   }
+  },
+  {
+   "id": "hair:side_part",
+   "label": "Side part",
+   "category": "look",
+   "description": "Look: hair = side part. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "hair",
+    "value": "side_part"
+   }
+  },
+  {
+   "id": "hair:bob",
+   "label": "Bob",
+   "category": "look",
+   "description": "Look: hair = bob. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "hair",
+    "value": "bob"
+   }
+  },
+  {
+   "id": "hair:spiky",
+   "label": "Spiky",
+   "category": "look",
+   "description": "Look: hair = spiky. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "hair",
+    "value": "spiky"
+   }
+  },
+  {
+   "id": "hair:mohawk",
+   "label": "Mohawk",
+   "category": "look",
+   "description": "Look: hair = mohawk. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "hair",
+    "value": "mohawk"
+   }
+  },
+  {
+   "id": "eyebrows:flat",
+   "label": "Flat",
+   "category": "look",
+   "description": "Look: eyebrows = flat. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "eyebrows",
+    "value": "flat"
+   }
+  },
+  {
+   "id": "eyebrows:arched",
+   "label": "Arched",
+   "category": "look",
+   "description": "Look: eyebrows = arched. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "eyebrows",
+    "value": "arched"
+   }
+  },
+  {
+   "id": "eyebrows:bushy",
+   "label": "Bushy",
+   "category": "look",
+   "description": "Look: eyebrows = bushy. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "eyebrows",
+    "value": "bushy"
+   }
+  },
+  {
+   "id": "eyebrows:pulled_in",
+   "label": "Pulled in",
+   "category": "look",
+   "description": "Look: eyebrows = pulled in. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "eyebrows",
+    "value": "pulled_in"
+   }
+  },
+  {
+   "id": "eyebrows:raised",
+   "label": "Raised",
+   "category": "look",
+   "description": "Look: eyebrows = raised. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "eyebrows",
+    "value": "raised"
+   }
+  },
+  {
+   "id": "eyebrows:unibrow",
+   "label": "Unibrow",
+   "category": "look",
+   "description": "Look: eyebrows = unibrow. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "eyebrows",
+    "value": "unibrow"
+   }
+  },
+  {
+   "id": "eyebrows:thin",
+   "label": "Thin",
+   "category": "look",
+   "description": "Look: eyebrows = thin. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "eyebrows",
+    "value": "thin"
+   }
+  },
+  {
+   "id": "eyes:round",
+   "label": "Round",
+   "category": "look",
+   "description": "Look: eyes = round. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "eyes",
+    "value": "round"
+   }
+  },
+  {
+   "id": "eyes:narrow",
+   "label": "Narrow",
+   "category": "look",
+   "description": "Look: eyes = narrow. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "eyes",
+    "value": "narrow"
+   }
+  },
+  {
+   "id": "eyes:wide_unblinking",
+   "label": "Wide unblinking",
+   "category": "look",
+   "description": "Look: eyes = wide unblinking. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "eyes",
+    "value": "wide_unblinking"
+   }
+  },
+  {
+   "id": "eyes:sleepy",
+   "label": "Sleepy",
+   "category": "look",
+   "description": "Look: eyes = sleepy. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "eyes",
+    "value": "sleepy"
+   }
+  },
+  {
+   "id": "eyes:sparkly",
+   "label": "Sparkly",
+   "category": "look",
+   "description": "Look: eyes = sparkly. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "eyes",
+    "value": "sparkly"
+   }
+  },
+  {
+   "id": "eyes:dots",
+   "label": "Dots",
+   "category": "look",
+   "description": "Look: eyes = dots. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "eyes",
+    "value": "dots"
+   }
+  },
+  {
+   "id": "eyes:hidden_by_glasses",
+   "label": "Hidden by glasses",
+   "category": "look",
+   "description": "Look: eyes = hidden by glasses. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "eyes",
+    "value": "hidden_by_glasses"
+   }
+  },
+  {
+   "id": "glasses:none",
+   "label": "None",
+   "category": "look",
+   "description": "Look: glasses = none. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "glasses",
+    "value": "none"
+   }
+  },
+  {
+   "id": "glasses:round",
+   "label": "Round",
+   "category": "look",
+   "description": "Look: glasses = round. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "glasses",
+    "value": "round"
+   }
+  },
+  {
+   "id": "glasses:square",
+   "label": "Square",
+   "category": "look",
+   "description": "Look: glasses = square. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "glasses",
+    "value": "square"
+   }
+  },
+  {
+   "id": "glasses:monocle",
+   "label": "Monocle",
+   "category": "look",
+   "description": "Look: glasses = monocle. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "glasses",
+    "value": "monocle"
+   }
+  },
+  {
+   "id": "glasses:sunglasses",
+   "label": "Sunglasses",
+   "category": "look",
+   "description": "Look: glasses = sunglasses. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "glasses",
+    "value": "sunglasses"
+   }
+  },
+  {
+   "id": "glasses:half_moon",
+   "label": "Half moon",
+   "category": "look",
+   "description": "Look: glasses = half moon. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "glasses",
+    "value": "half_moon"
+   }
+  },
+  {
+   "id": "mouth:smile",
+   "label": "Smile",
+   "category": "look",
+   "description": "Look: mouth = smile. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "mouth",
+    "value": "smile"
+   }
+  },
+  {
+   "id": "mouth:smirk",
+   "label": "Smirk",
+   "category": "look",
+   "description": "Look: mouth = smirk. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "mouth",
+    "value": "smirk"
+   }
+  },
+  {
+   "id": "mouth:frown",
+   "label": "Frown",
+   "category": "look",
+   "description": "Look: mouth = frown. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "mouth",
+    "value": "frown"
+   }
+  },
+  {
+   "id": "mouth:shouting",
+   "label": "Shouting",
+   "category": "look",
+   "description": "Look: mouth = shouting. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "mouth",
+    "value": "shouting"
+   }
+  },
+  {
+   "id": "mouth:flat",
+   "label": "Flat",
+   "category": "look",
+   "description": "Look: mouth = flat. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "mouth",
+    "value": "flat"
+   }
+  },
+  {
+   "id": "mouth:toothy_grin",
+   "label": "Toothy grin",
+   "category": "look",
+   "description": "Look: mouth = toothy grin. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "mouth",
+    "value": "toothy_grin"
+   }
+  },
+  {
+   "id": "mouth:o_shape",
+   "label": "\"O\" shape",
+   "category": "look",
+   "description": "Look: mouth = o shape. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "mouth",
+    "value": "o_shape"
+   }
+  },
+  {
+   "id": "facial_hair:none",
+   "label": "None",
+   "category": "look",
+   "description": "Look: facial hair = none. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "facial_hair",
+    "value": "none"
+   }
+  },
+  {
+   "id": "facial_hair:mustache",
+   "label": "Mustache",
+   "category": "look",
+   "description": "Look: facial hair = mustache. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "facial_hair",
+    "value": "mustache"
+   }
+  },
+  {
+   "id": "facial_hair:beard",
+   "label": "Beard",
+   "category": "look",
+   "description": "Look: facial hair = beard. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "facial_hair",
+    "value": "beard"
+   }
+  },
+  {
+   "id": "facial_hair:goatee",
+   "label": "Goatee",
+   "category": "look",
+   "description": "Look: facial hair = goatee. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "facial_hair",
+    "value": "goatee"
+   }
+  },
+  {
+   "id": "facial_hair:stubble",
+   "label": "Stubble",
+   "category": "look",
+   "description": "Look: facial hair = stubble. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "facial_hair",
+    "value": "stubble"
+   }
+  },
+  {
+   "id": "headwear:none",
+   "label": "None",
+   "category": "look",
+   "description": "Look: headwear = none. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "headwear",
+    "value": "none"
+   }
+  },
+  {
+   "id": "headwear:hijab",
+   "label": "Hijab",
+   "category": "look",
+   "description": "Look: headwear = hijab. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "headwear",
+    "value": "hijab"
+   }
+  },
+  {
+   "id": "headwear:turban",
+   "label": "Turban",
+   "category": "look",
+   "description": "Look: headwear = turban. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "headwear",
+    "value": "turban"
+   }
+  },
+  {
+   "id": "headwear:kippah",
+   "label": "Kippah",
+   "category": "look",
+   "description": "Look: headwear = kippah. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "headwear",
+    "value": "kippah"
+   }
+  },
+  {
+   "id": "headwear:headband",
+   "label": "Headband",
+   "category": "look",
+   "description": "Look: headwear = headband. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "headwear",
+    "value": "headband"
+   }
+  },
+  {
+   "id": "headwear:beret",
+   "label": "Beret",
+   "category": "look",
+   "description": "Look: headwear = beret. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "headwear",
+    "value": "beret"
+   }
+  },
+  {
+   "id": "headwear:top_hat_silly",
+   "label": "Silly top hat",
+   "category": "look",
+   "description": "Look: headwear = top hat silly. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "headwear",
+    "value": "top_hat_silly"
+   }
+  },
+  {
+   "id": "outfit:navy_suit",
+   "label": "Navy suit",
+   "category": "look",
+   "description": "Look: outfit = navy suit. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "outfit",
+    "value": "navy_suit"
+   }
+  },
+  {
+   "id": "outfit:black_tuxedo",
+   "label": "Black tuxedo",
+   "category": "look",
+   "description": "Look: outfit = black tuxedo. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "outfit",
+    "value": "black_tuxedo"
+   }
+  },
+  {
+   "id": "outfit:tweed_jacket",
+   "label": "Tweed jacket",
+   "category": "look",
+   "description": "Look: outfit = tweed jacket. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "outfit",
+    "value": "tweed_jacket"
+   }
+  },
+  {
+   "id": "outfit:blazer_blouse",
+   "label": "Blazer blouse",
+   "category": "look",
+   "description": "Look: outfit = blazer blouse. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "outfit",
+    "value": "blazer_blouse"
+   }
+  },
+  {
+   "id": "outfit:sweater_vest",
+   "label": "Sweater vest",
+   "category": "look",
+   "description": "Look: outfit = sweater vest. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "outfit",
+    "value": "sweater_vest"
+   }
+  },
+  {
+   "id": "outfit:cardigan",
+   "label": "Cardigan",
+   "category": "look",
+   "description": "Look: outfit = cardigan. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "outfit",
+    "value": "cardigan"
+   }
+  },
+  {
+   "id": "outfit:power_suit",
+   "label": "Power suit",
+   "category": "look",
+   "description": "Look: outfit = power suit. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "outfit",
+    "value": "power_suit"
+   }
+  },
+  {
+   "id": "outfit:dress_shirt_tie",
+   "label": "Dress shirt tie",
+   "category": "look",
+   "description": "Look: outfit = dress shirt tie. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "outfit",
+    "value": "dress_shirt_tie"
+   }
+  },
+  {
+   "id": "outfit:bow_tie_vest",
+   "label": "Bow tie vest",
+   "category": "look",
+   "description": "Look: outfit = bow tie vest. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "outfit",
+    "value": "bow_tie_vest"
+   }
+  },
+  {
+   "id": "outfit:lab_coat_silly",
+   "label": "Silly lab coat",
+   "category": "look",
+   "description": "Look: outfit = lab coat silly. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "outfit",
+    "value": "lab_coat_silly"
+   }
+  },
+  {
+   "id": "accessory:none",
+   "label": "None",
+   "category": "look",
+   "description": "Look: accessory = none. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "accessory",
+    "value": "none"
+   }
+  },
+  {
+   "id": "accessory:pen",
+   "label": "Pen",
+   "category": "look",
+   "description": "Look: accessory = pen. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "accessory",
+    "value": "pen"
+   }
+  },
+  {
+   "id": "accessory:placard",
+   "label": "Placard",
+   "category": "look",
+   "description": "Look: accessory = placard. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "accessory",
+    "value": "placard"
+   }
+  },
+  {
+   "id": "accessory:paper_stack",
+   "label": "Paper stack",
+   "category": "look",
+   "description": "Look: accessory = paper stack. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "accessory",
+    "value": "paper_stack"
+   }
+  },
+  {
+   "id": "accessory:laptop",
+   "label": "Laptop",
+   "category": "look",
+   "description": "Look: accessory = laptop. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "accessory",
+    "value": "laptop"
+   }
+  },
+  {
+   "id": "accessory:gavel",
+   "label": "Gavel",
+   "category": "look",
+   "description": "Look: accessory = gavel. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "accessory",
+    "value": "gavel"
+   }
+  },
+  {
+   "id": "accessory:briefcase",
+   "label": "Briefcase",
+   "category": "look",
+   "description": "Look: accessory = briefcase. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "accessory",
+    "value": "briefcase"
+   }
+  },
+  {
+   "id": "accessory:stopwatch",
+   "label": "Stopwatch",
+   "category": "look",
+   "description": "Look: accessory = stopwatch. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "accessory",
+    "value": "stopwatch"
+   }
+  },
+  {
+   "id": "accessory:chalk",
+   "label": "Chalk",
+   "category": "look",
+   "description": "Look: accessory = chalk. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "accessory",
+    "value": "chalk"
+   }
+  },
+  {
+   "id": "accessory:coffee_mug",
+   "label": "Coffee mug",
+   "category": "look",
+   "description": "Look: accessory = coffee mug. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "accessory",
+    "value": "coffee_mug"
+   }
+  },
+  {
+   "id": "accessory:clipboard",
+   "label": "Clipboard",
+   "category": "look",
+   "description": "Look: accessory = clipboard. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "accessory",
+    "value": "clipboard"
+   }
+  },
+  {
+   "id": "accessory:microphone",
+   "label": "Microphone",
+   "category": "look",
+   "description": "Look: accessory = microphone. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "accessory",
+    "value": "microphone"
+   }
+  },
+  {
+   "id": "skin_tone:sketch",
+   "label": "Sketch (outline only)",
+   "category": "look",
+   "description": "Look: skin tone = sketch. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "skin_tone",
+    "value": "sketch",
+    "color": null
+   }
+  },
+  {
+   "id": "skin_tone:tone_1",
+   "label": "Tone 1 (lightest)",
+   "category": "look",
+   "description": "Look: skin tone = tone 1. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "skin_tone",
+    "value": "tone_1",
+    "color": "#F9DCC4"
+   }
+  },
+  {
+   "id": "skin_tone:tone_2",
+   "label": "Tone 2",
+   "category": "look",
+   "description": "Look: skin tone = tone 2. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "skin_tone",
+    "value": "tone_2",
+    "color": "#F1C7A5"
+   }
+  },
+  {
+   "id": "skin_tone:tone_3",
+   "label": "Tone 3",
+   "category": "look",
+   "description": "Look: skin tone = tone 3. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "skin_tone",
+    "value": "tone_3",
+    "color": "#E0AC84"
+   }
+  },
+  {
+   "id": "skin_tone:tone_4",
+   "label": "Tone 4",
+   "category": "look",
+   "description": "Look: skin tone = tone 4. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "skin_tone",
+    "value": "tone_4",
+    "color": "#C98E64"
+   }
+  },
+  {
+   "id": "skin_tone:tone_5",
+   "label": "Tone 5",
+   "category": "look",
+   "description": "Look: skin tone = tone 5. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "skin_tone",
+    "value": "tone_5",
+    "color": "#A86F4A"
+   }
+  },
+  {
+   "id": "skin_tone:tone_6",
+   "label": "Tone 6",
+   "category": "look",
+   "description": "Look: skin tone = tone 6. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "skin_tone",
+    "value": "tone_6",
+    "color": "#8A5536"
+   }
+  },
+  {
+   "id": "skin_tone:tone_7",
+   "label": "Tone 7",
+   "category": "look",
+   "description": "Look: skin tone = tone 7. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "skin_tone",
+    "value": "tone_7",
+    "color": "#6B3F26"
+   }
+  },
+  {
+   "id": "skin_tone:tone_8",
+   "label": "Tone 8 (deepest)",
+   "category": "look",
+   "description": "Look: skin tone = tone 8. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "skin_tone",
+    "value": "tone_8",
+    "color": "#4A2B1A"
+   }
+  },
+  {
+   "id": "palette:pencil",
+   "label": "Pencil",
+   "category": "look",
+   "description": "Look: palette = pencil. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "palette",
+    "value": "pencil",
+    "colors": [
+     "#5B616B",
+     "#C9CED6"
+    ]
+   }
+  },
+  {
+   "id": "palette:ink",
+   "label": "Ink",
+   "category": "look",
+   "description": "Look: palette = ink. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "palette",
+    "value": "ink",
+    "colors": [
+     "#23262B",
+     "#8B93A1"
+    ]
+   }
+  },
+  {
+   "id": "palette:blue",
+   "label": "Blue",
+   "category": "look",
+   "description": "Look: palette = blue. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "palette",
+    "value": "blue",
+    "colors": [
+     "#2B6CB0",
+     "#9CC3EC"
+    ]
+   }
+  },
+  {
+   "id": "palette:highlighter",
+   "label": "Highlighter",
+   "category": "look",
+   "description": "Look: palette = highlighter. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "palette",
+    "value": "highlighter",
+    "colors": [
+     "#C9A400",
+     "#FFE45C"
+    ]
+   }
+  },
+  {
+   "id": "palette:chalkboard",
+   "label": "Chalkboard",
+   "category": "look",
+   "description": "Look: palette = chalkboard. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "palette",
+    "value": "chalkboard",
+    "colors": [
+     "#2F4F3E",
+     "#9DC5A6"
+    ]
+   }
+  },
+  {
+   "id": "palette:sunset",
+   "label": "Sunset",
+   "category": "look",
+   "description": "Look: palette = sunset. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "palette",
+    "value": "sunset",
+    "colors": [
+     "#D64545",
+     "#F6A96B"
+    ]
+   }
+  },
+  {
+   "id": "palette:mint",
+   "label": "Mint",
+   "category": "look",
+   "description": "Look: palette = mint. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "palette",
+    "value": "mint",
+    "colors": [
+     "#2F9E67",
+     "#A8E6C8"
+    ]
+   }
+  },
+  {
+   "id": "palette:grape",
+   "label": "Grape",
+   "category": "look",
+   "description": "Look: palette = grape. Changes only how it looks, never personality or difficulty.",
+   "puppet": {
+    "slot": "palette",
+    "value": "grape",
+    "colors": [
+     "#6B4FA0",
+     "#C9B6EC"
+    ]
+   }
+  },
+  {
+   "id": "1",
+   "label": "1 - Friendly sparring",
+   "category": "difficulty",
+   "description": "Slow, simple words. Leaves openings."
+  },
+  {
+   "id": "2",
+   "label": "2 - Polite but firm",
+   "category": "difficulty",
+   "description": "One follow-up question. Mild pushback."
+  },
+  {
+   "id": "3",
+   "label": "3 - Real committee",
+   "category": "difficulty",
+   "description": "Pushes on weak spots. Asks for evidence."
+  },
+  {
+   "id": "4",
+   "label": "4 - Tough room",
+   "category": "difficulty",
+   "description": "Quick, sharp rebuttals. Pins down dodges."
+  },
+  {
+   "id": "5",
+   "label": "5 - Nightmare",
+   "category": "difficulty",
+   "description": "Relentless and precise. Still fair, never cruel."
+  }
+ ]
+}

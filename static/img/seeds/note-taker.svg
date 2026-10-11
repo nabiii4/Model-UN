@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500"><defs><filter id="w"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter></defs><rect width="400" height="500" fill="#fffdf8"/><g fill="none" stroke="#2a2d33" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#w)">
+<path d="M200 96 q-72 0 -74 84 q0 84 74 90 q74 -6 74 -90 q-2 -84 -74 -84z" fill="#fff"/>
+<path d="M128 156 q4 -70 72 -72 q70 2 74 72 q-26 -30 -74 -30 q-46 0 -72 30z" fill="#2a2d33"/><circle cx="200" cy="72" r="22" fill="#2a2d33"/>
+<circle cx="172" cy="180" r="20"/><circle cx="228" cy="180" r="20"/><path d="M192 180 q8 -6 16 0"/>
+<circle cx="172" cy="180" r="5" fill="#2a2d33"/><circle cx="228" cy="180" r="5" fill="#2a2d33"/>
+<path d="M180 236 l40 0"/>
+<path d="M92 500 q8 -146 68 -166 l80 0 q60 20 68 166z" fill="#a8e6c8"/>
+<rect x="220" y="300" width="130" height="170" rx="6" fill="#fff"/><path d="M236 330 l96 0 M236 350 l96 0 M236 370 l80 0 M236 390 l96 0 M236 410 l60 0"/>
+<path d="M360 300 l-40 60" stroke-width="7"/>
+<text x="90" y="80" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#2a2d33" stroke="none">Interesting...</text>
+</g></svg>

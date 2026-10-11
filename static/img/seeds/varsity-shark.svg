@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500"><defs><filter id="w"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter></defs><rect width="400" height="500" fill="#fffdf8"/><g fill="none" stroke="#2a2d33" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#w)">
+<path d="M200 90 q-72 0 -74 86 q0 86 74 92 q74 -6 74 -92 q-2 -86 -74 -86z" fill="#fff"/>
+<path d="M126 150 q2 -70 74 -72 q74 2 74 74 q-30 -36 -100 -34 q-30 4 -48 32z" fill="#2a2d33"/>
+<path d="M156 164 l30 6 M244 164 l-30 6" stroke-width="6"/>
+<ellipse cx="172" cy="180" rx="10" ry="5" fill="#2a2d33"/><ellipse cx="228" cy="180" rx="10" ry="5" fill="#2a2d33"/>
+<path d="M160 224 q40 30 80 0 z" fill="#fff"/><path d="M168 228 l64 0 M176 224 l0 10 M192 226 l0 12 M208 226 l0 12 M224 224 l0 10"/>
+<path d="M90 500 q8 -146 70 -166 l80 0 q62 20 70 166z" fill="#6b4fa0"/>
+<circle cx="150" cy="380" r="18" fill="#ffe45c"/><text x="150" y="387" font-family="Arial" font-weight="bold" font-size="18" text-anchor="middle" fill="#2a2d33" stroke="none">#1</text>
+<rect x="290" y="260" width="80" height="200" fill="#fff"/><path d="M290 280 l80 0 M290 300 l80 0 M290 320 l80 0 M290 340 l80 0 M290 360 l80 0 M290 380 l80 0 M290 400 l80 0 M290 420 l80 0 M290 440 l80 0"/>
+<text x="330" y="246" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#2a2d33" stroke="none">87%!</text>
+<text x="60" y="80" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#d64545" stroke="none">SOURCE?</text>
+</g></svg>

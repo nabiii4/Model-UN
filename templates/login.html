@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="auth-wrap">
+  <form class="panel auth-form" id="login-form" novalidate>
+    <h1>Log in</h1>
+    {% if page_data.timed_out %}<p class="callout note">You were logged out after 30 quiet minutes (shared Chromebook). Welcome back!</p>{% endif %}
+    <div class="field"><label for="name">First name or nickname</label><input type="text" id="name" autocomplete="username" required maxlength="30"></div>
+    <div class="field"><label for="pin">PIN</label><input type="password" id="pin" inputmode="numeric" maxlength="4" autocomplete="current-password" required></div>
+    <label class="check"><input type="checkbox" id="shared" checked> This is a shared Chromebook <span class="hint-text">(log me out when the browser closes or after 30 idle minutes)</span></label>
+    <p class="error-text" id="login-error" role="alert"></p>
+    <div class="btn-row"><button class="btn primary big" type="submit" id="login-btn">Log in</button><a href="/join?next={{ page_data.next|urlencode }}">New here? Join the club</a></div>
+    <p class="small muted">Forgot your PIN? Ask an officer to reset it.</p>
+  </form>
+</div>
+{% endblock %}
+{% block scripts %}<script type="module" src="/static/js/auth.js"></script>{% endblock %}

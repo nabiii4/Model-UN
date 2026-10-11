@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block styles %}<link rel="stylesheet" href="/static/css/pages/admin.css">{% endblock %}
+{% block content %}
+<h1>Admin</h1>
+<div id="passcode-box" class="panel" hidden>
+  <h2 class="hand">Maintainer sign-in</h2>
+  <p>Enter the admin passcode to become a maintainer. Maintainers can then make other people editors or maintainers.</p>
+  <form id="passcode-form" class="passcode-row">
+    <label for="passcode" class="sr-only">Admin passcode</label>
+    <input type="password" id="passcode" autocomplete="off" placeholder="Admin passcode">
+    <button class="btn primary" type="submit">Unlock</button>
+  </form>
+  <p class="error-text" id="passcode-error" role="alert"></p>
+</div>
+<div id="admin-app" hidden>
+  <div class="tabs" role="tablist" aria-label="Admin sections" id="admin-tabs"></div>
+  <div id="admin-panel" role="tabpanel" tabindex="0"></div>
+</div>
+{% endblock %}
+{% block scripts %}<script type="module" src="/static/js/admin.js"></script>{% endblock %}

@@ -1,0 +1,20 @@
+{
+ "note": "The scripted demo round for 'Just sit'. No AI calls. Edit freely.",
+ "topic": "Plastic pollution",
+ "committee": "UNEP",
+ "student_country": "Canada",
+ "delegate_country": "Brazil",
+ "delegate_id": "seed-interrupter",
+ "lines": [
+  {"role": "delegate", "text": "Delegate of Canada, plastic bans sound nice, but who pays when factories close? Point of information — how many jobs?", "expression": "skeptical", "eyebrows": -1},
+  {"role": "student", "text": "Good question. We'd phase it in over five years and pay for job training with a small packaging fee."},
+  {"role": "delegate", "text": "A fee! So families pay more at the store. Will the delegate yield?", "expression": "smug", "eyebrows": 1},
+  {"role": "student", "text": "The delegate does not yield. The fee is paid by the companies that make the packaging, not shoppers."},
+  {"role": "delegate", "text": "Hmm. A fair point, delegate. But Brazil won't sign without help for small recyclers.", "expression": "impressed", "eyebrows": 1},
+  {"role": "student", "text": "Then let's write that in together. Canada would support a fund for small recyclers."}
+ ],
+ "feedback": {
+  "strength_quote": "The delegate does not yield.",
+  "strength_why": "You stayed calm and kept your point."
+ }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500"><defs><filter id="w"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter></defs><rect width="400" height="500" fill="#fffdf8"/><g fill="none" stroke="#2a2d33" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#w)">
+<path d="M200 90 q-76 0 -78 88 q0 88 78 94 q78 -6 78 -94 q-2 -88 -78 -88z" fill="#fff"/>
+<path d="M200 90 q76 0 78 88 q0 88 -78 94z" fill="#e6e8ee"/>
+<path d="M200 80 l0 200" stroke-dasharray="8 6"/>
+<path d="M124 150 q-6 -50 30 -66 q20 -12 46 -8 l0 30 q-46 0 -76 44z" fill="#2a2d33"/>
+<path d="M200 76 q50 -4 70 30 q10 20 6 44 q-30 -44 -76 -44z" fill="#2a2d33"/>
+<path d="M152 166 q18 -12 34 0"/><circle cx="170" cy="182" r="7" fill="#2a2d33"/><circle cx="173" cy="179" r="2" fill="#fff" stroke="none"/>
+<path d="M214 160 l34 10"/><circle cx="232" cy="184" r="6" fill="#2a2d33"/>
+<path d="M150 226 q24 22 50 4"/><path d="M200 230 q24 -14 48 6"/>
+<path d="M90 500 q8 -146 70 -166 l80 0 q62 20 70 166z" fill="#f6a96b"/>
+<path d="M90 400 q-30 -10 -40 -40 m40 40 q10 -16 30 -12" stroke-width="6"/>
+<text x="200" y="56" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#2a2d33" stroke="none">Lovely point! However...</text>
+</g></svg>

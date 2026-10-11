@@ -1,0 +1,11 @@
+{
+  "id": "mun",
+  "name": "Model UN",
+  "role_noun": "delegate",
+  "venue": "committee",
+  "formats": ["rebuttal_duel", "opening_speech", "points_of_information", "moderated_caucus", "bloc_building", "procedure_drill"],
+  "procedure": {
+    "motions": ["Open debate", "Set speaking time", "Moderated caucus (total time, speaking time, topic)", "Unmoderated caucus (total time)", "Introduce a working paper", "Close debate", "Move into voting procedure", "Table debate"],
+    "points": ["Point of Order", "Point of Information", "Point of Personal Privilege", "Parliamentary Inquiry", "Right of Reply"]
+  }
+}

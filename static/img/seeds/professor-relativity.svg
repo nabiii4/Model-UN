@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500"><defs><filter id="w"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter></defs><rect width="400" height="500" fill="#fffdf8"/><g fill="none" stroke="#2a2d33" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#w)">
+<path d="M200 96 q-74 0 -76 84 q0 86 76 92 q76 -6 76 -92 q-2 -84 -76 -84z" fill="#fff"/>
+<path d="M120 170 l-40 -30 l30 -6 l-36 -40 l40 6 l-14 -46 l40 26 l12 -44 l26 36 l22 -44 l18 44 l30 -36 l6 44 l40 -22 l-18 44 l40 -4 l-34 38 l30 10 l-40 26 q-6 -70 -76 -74 q-70 4 -76 74z" fill="#fff"/>
+<circle cx="172" cy="170" r="12" fill="#fff"/><circle cx="228" cy="170" r="12" fill="#fff"/><circle cx="172" cy="170" r="5" fill="#2a2d33"/><circle cx="228" cy="170" r="5" fill="#2a2d33"/>
+<path d="M150 146 q20 -14 40 0 M210 146 q20 -14 40 0" stroke-width="7"/>
+<path d="M164 222 q20 -20 36 -4 q16 -16 36 4 q-18 10 -36 2 q-18 8 -36 -2z" fill="#fff"/>
+<path d="M184 244 q16 8 32 0"/>
+<path d="M92 500 q8 -150 70 -170 l76 0 q62 20 70 170z" fill="#c9a27e"/>
+<path d="M120 420 l4 4 M140 400 l4 4 M260 410 l4 4 M280 440 l4 4"/>
+<rect x="290" y="390" width="40" height="12" fill="#fff" transform="rotate(-30 310 396)"/>
+<text x="70" y="470" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#2a2d33" stroke="none">E = mc²?</text>
+<text x="270" y="64" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#2a2d33" stroke="none">BUT WAIT</text>
+</g></svg>

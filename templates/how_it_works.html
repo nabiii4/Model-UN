@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="prose">
+  <h1>How it works</h1>
+  <p class="lead">{{ copy('definition') }}</p>
+  <ol class="how-steps">
+    <li><span class="how-icon" aria-hidden="true">✏️</span><strong>Draw</strong> the opponent that scares you most. On paper or on screen. Messy is perfect.</li>
+    <li><span class="how-icon" aria-hidden="true">📷</span><strong>Snap</strong> a photo of it (or use the drawing pad).</li>
+    <li><span class="how-icon" aria-hidden="true">🔍</span><strong>The AI reads your drawing.</strong> A huge mouth means it talks a lot. A pointing finger means it interrupts. It explains every clue it saw.</li>
+    <li><span class="how-icon" aria-hidden="true">🤝</span><strong>Meet your nightmare.</strong> Fix anything that's off. It's yours.</li>
+    <li><span class="how-icon" aria-hidden="true">🗣️</span><strong>Practice one round.</strong> Type (or later, speak). It gets tougher when you do well and eases off when you struggle — like a thermostat.</li>
+    <li><span class="how-icon" aria-hidden="true">🙋</span><strong>Go find a human.</strong> The site is the warm-up. People are the real practice.</li>
+  </ol>
+  <h2>Peek under the hood</h2>
+  <details class="panel"><summary class="hand">What is a "persona"?</summary>
+    <p>Your nightmare is a set of instructions plus examples, saved as data: its name, tactics (like "demands evidence, 4 out of 5"), temperament, catchphrases, and a weakness. Every turn, the server sends those instructions to the AI along with the conversation so far. No magic — just very clear instructions.</p></details>
+  <details class="panel"><summary class="hand">How does "training" work?</summary>
+    <p>We don't change the AI model itself. When you train a nightmare, you change its instructions: rules like "Always ask which country" and example replies. Every change makes a new version, and you can always go back.</p></details>
+  <details class="panel"><summary class="hand">Why does the AI key stay on the server?</summary>
+    <p>An AI key is like a password that costs money. If it were in the web page, anyone could copy it. So your browser talks only to our server, and only the server talks to the AI.</p></details>
+  <details class="panel"><summary class="hand">How will the head follow me? (Phase 2)</summary>
+    <p>Your own laptop finds your face in the camera picture and turns the puppet's eyes toward you. The video never leaves your laptop — nothing is uploaded.</p></details>
+  <details class="panel"><summary class="hand">What is "demo mode"?</summary>
+    <p>If the site has no AI key yet, it runs in demo mode: pretend answers that look real, so anyone can try it and develop it for free. You'll see a yellow ribbon at the top.</p></details>
+  {% set repo_url = copy('site.code_repo_url') %}
+  {% if repo_url.startswith('https://') %}{# only real web links: "none" hides it, and javascript: links can't sneak in #}
+  <details class="panel"><summary class="hand">Can I see the code?</summary>
+    <p>Yes! The whole site is public, so you can read how it works, learn from it, or help fix it:
+      <a href="{{ repo_url }}" rel="noopener" target="_blank">{{ repo_url }}<span class="sr-only"> (opens in a new tab)</span></a>.
+      Keys are never in the code — they stay on the server.</p></details>
+  {% endif %}
+  <div class="btn-row"><a class="btn primary big" href="/draw">Try it</a><a class="btn" href="/ritual">Read the story</a></div>
+</article>
+{% endblock %}

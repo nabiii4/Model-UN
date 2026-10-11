@@ -1,0 +1,2833 @@
+{
+ "note": "Mock mode lines (no AI). 15 per tactic. {country} = the delegate's country, {student_country}, {topic}, {quote} = a few of the student's own words.",
+ "tactics": {
+  "interrupts": [
+   {
+    "text": "Point of information! Does the delegate of {student_country} have a plan for {topic}, or just a feeling?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Sorry to cut in, delegate. You said '{quote}'. Who exactly does that help?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Point of information! How long would that take?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Will the delegate yield to a quick question? What happens if nobody agrees?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Hold on. Before you go on, which countries are already on board?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Point of information. Is that a promise or a hope?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Quick question, delegate. Who pays for that?",
+    "expression": "annoyed",
+    "eyebrows": -2
+   },
+   {
+    "text": "I must interrupt. That plan skips the hardest part of {topic}.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Point of information! Can the delegate name one example?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Excuse me, delegate. You keep saying '{quote}'. What does that mean in practice?",
+    "expression": "annoyed",
+    "eyebrows": -2
+   },
+   {
+    "text": "Point of information! {country} has tried that. It didn't work. Why would it now?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "One second. Is the delegate aware this affects millions of people?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Point of information! What's your first step, exactly?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "I'll jump in here. That sounds nice, but how do you measure success?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Point of information! Will {student_country} put money behind that?",
+    "expression": "smug",
+    "eyebrows": 1
+   }
+  ],
+  "demands_evidence": [
+   {
+    "text": "Source, delegate? Where does that come from?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "That's a big claim. What evidence supports it?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You said '{quote}'. Says who?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "{country} would love to see the data behind that.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Is that a fact, or a feeling? Show me the proof.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Which report says that, delegate?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "I need more than a guess. Do you have a number or an example?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Interesting. Can you name one study, one country, or one year?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Evidence, please. {topic} is too important for guesses.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "That's an estimate at best. Where did you get it?",
+    "expression": "annoyed",
+    "eyebrows": -2
+   },
+   {
+    "text": "Without a source, that point doesn't stand. Try again?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "I hear a claim. I don't hear proof. Which is it?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Can the delegate back that up with something real?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "{country} works with facts. What facts do you have?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Prove it, delegate. One example will do.",
+    "expression": "stern",
+    "eyebrows": -2
+   }
+  ],
+  "rapid_stats": [
+   {
+    "text": "About a third of countries already tried that. Most gave up within five years.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Numbers matter, delegate. Costs go up about ten percent every year on {topic}.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Roughly half of the plans like yours never get funded. Why is yours different?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "{country} spends a large share of its budget on this already. You want more?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Studies show progress is slow, maybe a few percent a year. Your plan promises magic.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Millions of people are affected by {topic}. Your plan reaches how many?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Most experts say it takes ten years or more. You said '{quote}'. Faster? How?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Two out of three similar programs went over budget. Do you have a fix?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "The trend is clear and it's going the wrong way. What's your number?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Every year we wait, the cost grows. By how much does your plan cut it?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Nearly every region reports the same problem. A local fix won't do.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "{country} has numbers. Does {student_country}?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Quick math, delegate: more people, same money, same problem.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "That's one example. The big picture says something else.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Statistically, your idea is a long shot. Convince me otherwise.",
+    "expression": "smug",
+    "eyebrows": 1
+   }
+  ],
+  "thought_experiments": [
+   {
+    "text": "Imagine every country did exactly what you said tomorrow. What breaks first?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Picture a small town with one factory. Your plan arrives. Who loses their job?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Imagine you're on a very fast train, delegate. Is your plan the brakes or the engine?",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "Suppose {country} says no. Does your plan still work?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Imagine it's ten years from now. Is {topic} solved, or just moved somewhere else?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Here's a puzzle: if everyone agrees but nobody pays, what happens?",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "Picture two neighbors arguing over one river. Your plan picks a side. Which one?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Imagine your plan works too well. What's the side effect?",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "Let's flip it. What if {student_country} was the country being asked to change?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Imagine a student your age in {country}. How does your plan change their day?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Suppose the money runs out halfway. Then what?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Picture a map with no borders. Now put them back. Does your plan survive?",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "Imagine a world where we do nothing. Is that really worse than your plan?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Relatively speaking, delegate, what if the problem is the solution?",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "Imagine you had one sentence to convince the whole room. Is '{quote}' it?",
+    "expression": "thinking",
+    "eyebrows": 0
+   }
+  ],
+  "rhetorical_questions": [
+   {
+    "text": "Do we really think one resolution fixes {topic}?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Who here believes that plan pays for itself?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Is the delegate seriously asking {country} to carry the cost?",
+    "expression": "annoyed",
+    "eyebrows": -2
+   },
+   {
+    "text": "Haven't we heard this idea before?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "And who checks that it actually happens? Nobody?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Can we honestly call that a solution?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "You said '{quote}'. Isn't that exactly the problem?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Would any country sign that today? I don't think so.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Is it fair to ask the poorest countries to move first?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "What could possibly go wrong? Everything, delegate.",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "Isn't it convenient that {student_country} pays the least?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Do we fix a leak by repainting the boat?",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "Should we really trust a plan with no timeline?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Who wouldn't want that? The people paying for it.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Are we solving {topic}, or just talking about it?",
+    "expression": "stern",
+    "eyebrows": -2
+   }
+  ],
+  "slippery_slope": [
+   {
+    "text": "If we accept that, next year it's twice as big. Where does it stop?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Today it's a small fee. Tomorrow it's a tax on everything.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Your plan opens a door, delegate. Who walks through it next?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Once one country does this, everyone will demand the same deal.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "First the rules, then the fines, then the bans. {country} sees where this leads.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You said '{quote}'. That's how big problems start.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "If we bend the rules for {topic}, what rule is safe?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Give one group an exception and soon everyone wants one.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "This starts small, but small things grow.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Step by step, this ends somewhere nobody voted for.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Today it's voluntary. In five years it's mandatory. Admit it.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "{country} has watched plans like this grow out of control.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "If we allow that, what stops the next country from going further?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Every big mistake started as a reasonable idea, delegate.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Where's the line, delegate? Draw it for me.",
+    "expression": "stern",
+    "eyebrows": -2
+   }
+  ],
+  "emotional_appeal": [
+   {
+    "text": "Think of a family in {country} who depends on this. Your plan forgets them.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Behind every number is a person. Who speaks for them in your plan?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "A child in a village doesn't care about committees. They care about today.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "I've heard stories from {country} that would change your mind.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "This isn't just policy, delegate. It's people's homes.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You said '{quote}'. Would you say that to someone who lost their job?",
+    "expression": "annoyed",
+    "eyebrows": -2
+   },
+   {
+    "text": "Imagine explaining your plan to a worried parent.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "People are waiting for help, not speeches.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "{topic} isn't abstract for the people living it.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Every day of delay is another family waiting.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Our citizens deserve a plan that feels like help, not homework.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Real people, real lives. Does your plan see them?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "I'm thinking of the young people in {country}. Are you?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Hope matters, delegate. Your plan sounds like paperwork.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Let's not forget who this room is supposed to serve.",
+    "expression": "stern",
+    "eyebrows": -2
+   }
+  ],
+  "history_appeal": [
+   {
+    "text": "History shows plans like this fade after the first year.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "We've been here before, delegate. It ended badly.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "History shows that rushing {topic} creates new problems.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "{country} remembers the last time someone promised a quick fix.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "The past is full of resolutions that sounded like yours.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "History doesn't repeat, but it rhymes. Your plan rhymes with failure.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Look back twenty years. What changed? Not much.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "History shows trust is built slowly. Your plan skips that.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Every era thinks it found the answer. Most were wrong.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "You said '{quote}'. History disagrees.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Past agreements on this worked only with strong checks. Where are yours?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "History shows the small countries pay first. Not this time.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "The record is clear, delegate, and it's not on your side.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Older plans failed for one reason: no follow-through. Same here?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "History rewards patience. Your plan is in a hurry.",
+    "expression": "thinking",
+    "eyebrows": 0
+   }
+  ],
+  "cites_treaties": [
+   {
+    "text": "Past UN resolutions already cover this. Why write a new one?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "{country} signed earlier agreements on {topic}. Your plan ignores them.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "There are treaties for this. Does your plan respect them?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "The UN Charter talks about cooperation, not pressure.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Earlier resolutions asked for voluntary steps. You want rules. Why?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "International law is clear about sovereignty, delegate.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You said '{quote}'. Which treaty supports that?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Agreements only work if countries sign them. Who signs yours?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "The last agreement on this took years to negotiate. Yours took one sentence.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "{country} follows the agreements it signed. Will {student_country}?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "We already have frameworks. Use them before inventing new ones.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Past resolutions failed because they had no money attached. Does yours?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "A treaty without checks is just a wish.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Let's build on what the UN already agreed, not start over.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Your plan conflicts with earlier commitments. Which one wins?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   }
+  ],
+  "reframes_question": [
+   {
+    "text": "The real question isn't {topic}. It's who decides.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "You're asking how. I'm asking why.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Let's be honest: this is really about money.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "You said '{quote}'. But that's not the question that matters.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "This debate isn't about rules. It's about trust.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Maybe the question is whether this belongs at the UN at all.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "You framed it as a problem. {country} sees an opportunity.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Let's zoom out. Is {topic} a cause or a symptom?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "The question isn't whether to act. It's who goes first.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You're solving yesterday's problem, delegate.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "This isn't about what's right. It's about what works.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Let me ask a better question: who benefits?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "The issue isn't speed. It's fairness.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Let's call it what it is: a question of power.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "The real debate is about who pays and who gains.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   }
+  ],
+  "turns_point_around": [
+   {
+    "text": "You said '{quote}'. Exactly. That's why {country} disagrees.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Thank you, delegate. You just made my argument.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "If that's true, then your own plan fails the same test.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "You're worried about cost? So is {country}. That's why we oppose you.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "By your logic, {student_country} should go first.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Your example proves my point, not yours.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "You want fairness? Then let's apply it to your plan too.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "If people matter most, why does your plan ask them to wait?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "You said it yourself: it's hard. So why rush?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Interesting. That reason is exactly why this won't work.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Your best point is also your biggest problem.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "I agree with your facts. I disagree with your conclusion.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "If we follow your idea all the way, {country} wins the argument.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "You named the risk. Your plan doesn't fix it.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Thank you for that. It shows why we need a different plan.",
+    "expression": "smug",
+    "eyebrows": 1
+   }
+  ],
+  "yes_no_traps": [
+   {
+    "text": "Yes or no, delegate: will {student_country} pay for this?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Simple question. Yes or no: does your plan have a deadline?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Yes or no: would {student_country} accept the same rules?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "You said '{quote}'. Yes or no, is that a promise?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Yes or no: can you guarantee it works?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "One word, delegate. Will it cost jobs? Yes or no?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Yes or no: is there a backup plan?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Do you support punishing countries that don't follow it? Yes or no?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Yes or no: have you asked the countries most affected?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Just yes or no. Is your plan voluntary?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Yes or no: would you vote for this if {country} wrote it?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "A simple yes or no: is the money already found?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Yes or no: does your plan help {country}?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Yes or no, delegate. Is this realistic?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "I'll make it easy. Yes or no: do you trust the numbers?",
+    "expression": "smug",
+    "eyebrows": 1
+   }
+  ],
+  "pins_down_dodges": [
+   {
+    "text": "With respect, that wasn't my question. Who pays?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You didn't answer. I'll ask again: how does it work?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "That's a nice speech, delegate. It's not an answer.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "You said '{quote}'. That avoids the question. Try again?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Let's be precise. What exactly is your first step?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "I'll wait for a real answer.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You changed the subject. {country} noticed.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Answer the question, please. Then we can move on.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Still waiting, delegate. When does it start?",
+    "expression": "annoyed",
+    "eyebrows": -2
+   },
+   {
+    "text": "That's a different question. Answer mine first.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Clear and simple, please. Yes, no, or how?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "I asked about cost. You talked about values. Which is it?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Let me ask again, slowly: what's the plan?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You're dodging, delegate. Politely, but dodging.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "One clear answer, and I'll stop asking.",
+    "expression": "stern",
+    "eyebrows": -2
+   }
+  ],
+  "procedural_objections": [
+   {
+    "text": "Point of order! The delegate will refer to other delegates in the third person.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Point of order. The delegate should address the chair, not me directly.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Is the delegate aware of the rules on speaking time?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Point of order: please use formal language in committee.",
+    "expression": "annoyed",
+    "eyebrows": -2
+   },
+   {
+    "text": "The delegate of {country} notes that was not a question to the chair.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Point of order! That remark is off topic.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Procedurally, delegate, you need a motion for that.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Point of order: the delegate said 'you.' The correct form is 'the delegate.'",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Is that a motion or an opinion, delegate?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "The rules say one point at a time. Which is yours?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Point of order. Please stay on {topic}.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "The delegate of {country} requests that speakers follow procedure.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Point of parliamentary inquiry: does the delegate yield the floor?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "That would require a two-thirds vote, delegate.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Point of order! The chair did not recognize that point.",
+    "expression": "stern",
+    "eyebrows": -2
+   }
+  ],
+  "long_answers": [
+   {
+    "text": "Let me explain why, step by step. First the cost, then the timing, then who carries it. On all three, {country} disagrees.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "There are many sides to {topic}, delegate, and your plan covers only one of them. We must think about money, people, and time together.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "To answer properly, I need to start at the beginning: this problem is old, it is complicated, and it won't be fixed in one vote.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "You said '{quote}', and I want to unpack that carefully, because it hides three different problems inside one sentence.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Allow me to walk through the full picture. Your plan is a start. But a start is not a plan, and a plan is not a result.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "{country} has thought about this for a long time. There is history, there is cost, and there is trust. Your plan skips two of the three.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "First, the money isn't there. Second, the deadlines are vague. Third, nobody checks. Fourth... well, I'll stop at three.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "This is a long story, delegate, and your plan reads only the last page.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Let me be thorough. Who pays, who checks, who benefits, and who gets left out? Your plan answers one.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "There's the short answer and the long answer. The long answer is: it depends on things your plan ignores.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "To be complete: the idea is kind, the timing is wrong, the funding is missing, and the support is thin.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "I could talk about this all day. Briefly: {country} needs more detail before it agrees to anything.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Every country in this room sees {topic} differently. A good plan has to work for all of them, not just {student_country}.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Consider the whole chain: decision, money, action, results. Your plan breaks at the second link.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Let me take my time on this, because it matters: rushed plans make new problems.",
+    "expression": "thinking",
+    "eyebrows": 0
+   }
+  ],
+  "changes_subject": [
+   {
+    "text": "Before we go further, let's talk about the real issue: funding.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "That's one angle. But what about trade? That's where {country} is strong.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Interesting. But the bigger problem is education. Let's start there.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Let's move on to something more urgent: who enforces this?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You keep talking about '{quote}'. {country} wants to talk about results.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Let's focus on the countries that are already doing well instead.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Fine. But nobody has mentioned technology yet. Let's.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "We could debate that forever. Let's talk about jobs instead.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Let's step back to the part your plan forgot: the timeline.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "A better topic: what is {student_country} doing at home?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Before that, let's look at the data, not the hopes.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "I'd rather discuss solutions that already work.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "That's a side issue. The main issue is trust.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Let's talk about what {country} has already done.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Moving on: the real fight is over the budget.",
+    "expression": "stern",
+    "eyebrows": -2
+   }
+  ],
+  "flattery_then_attack": [
+   {
+    "text": "What a lovely point, delegate. However, it falls apart on cost.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "You speak beautifully. Sadly, the plan doesn't match the speech.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "I truly admire your passion. I don't admire your numbers.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "You said '{quote}'. Wonderful words! Empty plan.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "{student_country} always brings great ideas. This isn't one of them.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Brilliant start, delegate. Now let's look at the hole in the middle.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "I agree with your heart. I disagree with your homework.",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "Such a thoughtful delegate. Such a thin proposal.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Thank you for that excellent speech. Now, the problems.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Very clever. Too clever. It won't survive a vote.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "You clearly prepared. Did you prepare for the cost question?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Kind words, delegate. Let me be less kind about the plan.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Lovely idea. Who pays for lovely?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "I'm impressed. Not convinced, but impressed.",
+    "expression": "impressed",
+    "eyebrows": 1
+   },
+   {
+    "text": "You're a strong speaker. That's why I expected a stronger plan.",
+    "expression": "smug",
+    "eyebrows": 1
+   }
+  ],
+  "devils_advocate": [
+   {
+    "text": "Let me argue the other side: maybe doing nothing is safer.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "What if {topic} isn't a problem at all? Prove it is.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Playing devil's advocate: why should {country} care?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Suppose your plan is wrong. What's the cost of being wrong?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Here's the opposite view: the market will fix this on its own.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "You said '{quote}'. What if the opposite is true?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Let me test you. Why not let each country decide alone?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Some say this is none of the UN's business. Answer them.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Argue against yourself for a second. Where's the weak spot?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "What if the people affected don't want your help?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Maybe slower is better. Convince me it isn't.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Here's a hard one: why should rich countries pay more?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Let's say I agree. Now tell me why someone smart would disagree.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "What if your plan helps one problem and causes two?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "I'll take the unpopular side: this can wait. Change my mind.",
+    "expression": "smug",
+    "eyebrows": 1
+   }
+  ],
+  "finds_contradictions": [
+   {
+    "text": "Earlier you said it would be cheap. Now it needs a fund. Which is it?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "You said '{quote}'. That doesn't match what you said before.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "A minute ago it was voluntary. Now it's required?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Interesting. Your first point and your last point disagree.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Earlier you said speed mattered. Now you want five years?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "You said every country is equal, then asked {country} to pay more.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "That contradicts your opening, delegate.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Wait. You said nobody would lose jobs. Now there's job training?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Which version of your plan should we vote on?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "You keep changing the story. {country} prefers one story.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "First it was simple. Now it's complicated. Which is true?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "You agreed with me earlier. Why the change?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "I wrote down your words. They don't line up.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "That's the opposite of your last answer, delegate.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Let's pick one position and test it. Which one?",
+    "expression": "stern",
+    "eyebrows": -2
+   }
+  ],
+  "analogies": [
+   {
+    "text": "Your plan is like fixing a roof during a storm. Brave, but wet.",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "That's like buying shoes without knowing the size.",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "{topic} is a puzzle. You're forcing one piece into the wrong spot.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "It's like planting a tree and digging it up every week to check the roots.",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "Your plan is a bike with one wheel. It might move, but not far.",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "This is like a group project where only one person works.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "You said '{quote}'. That's like promising a cake with no flour.",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "Think of it like a bridge. Your plan builds one side.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "It's like putting a bandage on a broken leg.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Your plan is a map without roads.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "It's like a recipe that says 'add stuff.' How much stuff?",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "This debate is a relay race, and you dropped the baton at cost.",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "That's like turning up the music to ignore a smoke alarm.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Like a lighthouse with no light, delegate. Pretty, but not helpful.",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "It's like a team with no coach. Who's in charge?",
+    "expression": "thinking",
+    "eyebrows": 0
+   }
+  ],
+  "demands_specifics": [
+   {
+    "text": "Which country? Which year? Be specific, delegate.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You said '{quote}'. Which people, exactly?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "How much money? Give me a number.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "When, exactly? This year? In ten years?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Who runs it? Name the agency.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Which part of {topic} does this fix first?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Specifics, please. Where does it start?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "How many people does it help? Roughly?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Which countries have agreed so far?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "What does success look like, in one number?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "You keep saying 'help.' Help how?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Name one place where this already works.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "What's the deadline, delegate?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Who checks the results? Which group?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Be precise. What changes on day one?",
+    "expression": "stern",
+    "eyebrows": -2
+   }
+  ],
+  "quotes_you_back": [
+   {
+    "text": "You said, and I quote, '{quote}'. Do you stand by that?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "'{quote}.' Those were your words, delegate.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Let me read that back: '{quote}.' Is that really the plan?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "I wrote it down: '{quote}.' Interesting...",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "You just said '{quote}.' {country} would like you to explain.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "'{quote}' — that's a big promise. Can you keep it?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Your exact words were '{quote}.' Let's test them.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Interesting... '{quote}.' What did you mean by that?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "I'll quote you: '{quote}.' Now, who pays?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "'{quote}.' I'll remember that when we vote.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "You said '{quote}.' Earlier, you said something different.",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Let the record show: '{quote}.'",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Hold on. '{quote}.' Is that a fact or an opinion?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "'{quote}.' Nice line. What's behind it?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "I'm reading my notes: '{quote}.' Explain, please.",
+    "expression": "thinking",
+    "eyebrows": 0
+   }
+  ],
+  "so_what": [
+   {
+    "text": "So what? Why does that matter to {country}?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "You said '{quote}'. And?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Fine. Why should anyone care?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "So what changes for real people?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "That's true. So what?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Why does that matter for {topic}?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Okay. What's the point?",
+    "expression": "annoyed",
+    "eyebrows": -2
+   },
+   {
+    "text": "And that leads to what, delegate?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "So what if it's popular? Does it work?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Why is that important right now?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "You've told me what. Tell me why.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Interesting fact. Why should the room care?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "...And? Finish the thought.",
+    "expression": "neutral",
+    "eyebrows": 0
+   },
+   {
+    "text": "That's a detail. Where's the big picture?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "I'm listening. Why does it matter?",
+    "expression": "neutral",
+    "eyebrows": 0
+   }
+  ],
+  "side_deals": [
+   {
+    "text": "Let's make a deal. {country} supports you if you support our trade clause.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "I could vote yes... if {student_country} helps with our funding.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Here's an offer: we sign, you add our amendment.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "{country} has friends in this room. Want them on your side?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "A trade, delegate: your timeline for our exception.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "You said '{quote}'. We'd agree, for a price.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "What's {student_country} willing to give to get our vote?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Let's talk privately after this. I think we can work something out.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Support our bloc on the next topic, and we'll support you on this one.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Every vote has a cost. What's yours?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "We could co-sponsor this. With a few small changes.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "I'll bring three countries with me if you drop the deadline.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "{country} likes deals. Do you?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Give a little, get a lot. That's how this room works.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Add our name as a sponsor and we'll talk.",
+    "expression": "smug",
+    "eyebrows": 1
+   }
+  ],
+  "veto_threat": [
+   {
+    "text": "{country} would veto that as written.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Careful, delegate. That plan won't survive the Security Council.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "A veto is on the table if you keep that clause.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You said '{quote}'. {country} cannot accept that. We would block it.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Rewrite it, or {country} votes no in the place that counts.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "We have the power to stop this. Give us a reason not to.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "That clause is a red line for {country}.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You'll need {country} on board. Right now, you don't have us.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Without changes, this goes nowhere.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "We've blocked plans like this before.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Count the votes, delegate. Then count the vetoes.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "A veto isn't a threat. It's a promise.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Change the enforcement part, or we stop it.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "{country} will not be pushed. Rethink it.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "The permanent members need to agree. We don't.",
+    "expression": "stern",
+    "eyebrows": -2
+   }
+  ],
+  "compromise_offers": [
+   {
+    "text": "What if we meet in the middle: a smaller fee, a longer timeline?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "{country} could accept half of that. Would you?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Let's find a middle ground. Voluntary first, required later?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "You said '{quote}'. We could support a softer version.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "A pilot program in a few countries first? Then we expand.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "We both want progress. Let's agree on step one.",
+    "expression": "impressed",
+    "eyebrows": 1
+   },
+   {
+    "text": "Here's a compromise: you keep the goal, we pick the timeline.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "What if rich countries pay more at first, then it evens out?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Let's both give a little. Deal?",
+    "expression": "amused",
+    "eyebrows": 1
+   },
+   {
+    "text": "{country} can work with that if we add a review in two years.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Maybe we split the cost by region?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "I hear you. Can we start smaller?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "A shared fund, shared rules, shared credit. Interested?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "We're closer than it sounds, delegate.",
+    "expression": "impressed",
+    "eyebrows": 1
+   },
+   {
+    "text": "Let's write it together, line by line.",
+    "expression": "impressed",
+    "eyebrows": 1
+   }
+  ],
+  "time_pressure": [
+   {
+    "text": "We're running out of time, delegate. Get to the point.",
+    "expression": "annoyed",
+    "eyebrows": -2
+   },
+   {
+    "text": "Quickly, please. The clock is ticking.",
+    "expression": "annoyed",
+    "eyebrows": -2
+   },
+   {
+    "text": "Time is short. What's your one main idea?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You said '{quote}'. Faster, delegate. Then what?",
+    "expression": "annoyed",
+    "eyebrows": -2
+   },
+   {
+    "text": "Ten seconds of point, please, not thirty seconds of warm-up.",
+    "expression": "annoyed",
+    "eyebrows": -2
+   },
+   {
+    "text": "While we talk, {topic} gets worse. Speed up.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "The committee can't wait. Summarize.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Clock's running, delegate.",
+    "expression": "annoyed",
+    "eyebrows": -2
+   },
+   {
+    "text": "We have minutes, not hours. What's the plan?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Wrap it up, please. One sentence.",
+    "expression": "annoyed",
+    "eyebrows": -2
+   },
+   {
+    "text": "The vote is soon. Are you ready or not?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Tick, tock. Your answer?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "{country} has places to be. Your point?",
+    "expression": "annoyed",
+    "eyebrows": -2
+   },
+   {
+    "text": "Short and sharp, please. Time matters.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Hurry, delegate. What's the first step?",
+    "expression": "annoyed",
+    "eyebrows": -2
+   }
+  ],
+  "silent_treatment": [
+   {
+    "text": "...Go on.",
+    "expression": "neutral",
+    "eyebrows": 0
+   },
+   {
+    "text": "...",
+    "expression": "neutral",
+    "eyebrows": 0
+   },
+   {
+    "text": "...I'm still waiting for the main point.",
+    "expression": "neutral",
+    "eyebrows": 0
+   },
+   {
+    "text": "Hm. ...Continue.",
+    "expression": "neutral",
+    "eyebrows": 0
+   },
+   {
+    "text": "...That's it?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "...And?",
+    "expression": "neutral",
+    "eyebrows": 0
+   },
+   {
+    "text": "...You said '{quote}'. ...Keep going.",
+    "expression": "neutral",
+    "eyebrows": 0
+   },
+   {
+    "text": "...Is there more?",
+    "expression": "neutral",
+    "eyebrows": 0
+   },
+   {
+    "text": "......Why?",
+    "expression": "neutral",
+    "eyebrows": 0
+   },
+   {
+    "text": "...I'll let that sit for a moment.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "...Interesting.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "...Say that again, slower.",
+    "expression": "neutral",
+    "eyebrows": 0
+   },
+   {
+    "text": "...{country} is listening.",
+    "expression": "neutral",
+    "eyebrows": 0
+   },
+   {
+    "text": "...Mm.",
+    "expression": "neutral",
+    "eyebrows": 0
+   },
+   {
+    "text": "...Fill the silence, delegate.",
+    "expression": "smug",
+    "eyebrows": 1
+   }
+  ],
+  "mirror": [
+   {
+    "text": "So you're saying {country} should pay for {student_country}'s idea?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Let me repeat that: you want everyone to change, except you.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "You said '{quote}'. So, in other words, it's not ready yet?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "If I heard you right, the plan is: hope it works.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "So your plan is a good wish with a deadline?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "You're saying it's urgent, but it can wait five years?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "So, to be clear, it costs nothing and fixes everything?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "In other words, someone else will figure out the details?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "You're saying people will just agree. Interesting.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "So the answer to a big problem is a small fee?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "If I understand, the plan is to make a plan?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Let me say it back: trust us, it'll work.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "So you want rules, but no one to check them?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "You mean {student_country} gets credit and {country} gets the bill?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "So, basically, more meetings?",
+    "expression": "smug",
+    "eyebrows": 1
+   }
+  ],
+  "with_all_due_respect": [
+   {
+    "text": "With all due respect, delegate, that won't work.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "With great respect, {country} sees it very differently.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "I mean this kindly: the plan has a big hole.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "With all due respect, '{quote}' isn't a solution.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Respectfully, the numbers don't add up.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "With every respect to {student_country}, that's unrealistic.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "I say this with respect: who pays?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "With all due respect, we've tried that.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Respectfully, delegate, you skipped the hard part.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "With the utmost respect, no.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "I respect the effort. I can't support the result.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "With all due respect, the timeline is fantasy.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Respectfully, {country} needs more than good intentions.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "With respect, that answer was a dodge.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "All respect to you, delegate. None to that plan.",
+    "expression": "smug",
+    "eyebrows": 1
+   }
+  ],
+  "worst_case": [
+   {
+    "text": "Worst case: the money runs out and nothing changes.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Picture it failing. Who gets hurt first?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "If this goes wrong, {country} pays for the cleanup.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You said '{quote}'. And if it backfires?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Worst case, your plan makes {topic} worse.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Imagine the headlines if this fails.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "The worst case isn't unlikely, delegate. It's common.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "If one big country quits, the whole plan collapses.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "What if people stop trusting the UN because of this?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Worst case: years of work, zero results.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "If it fails, who takes responsibility?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "The worst case for {country} is jobs lost and nothing gained.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Plan for the storm, not the sunshine.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "If the worst happens, is there a plan B?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "I've seen the worst case before. It looks like this plan.",
+    "expression": "stern",
+    "eyebrows": -2
+   }
+  ],
+  "cost_focus": [
+   {
+    "text": "Who pays for this?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "How much, delegate? A rough number is fine.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You said '{quote}'. Lovely. What's the price tag?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "{country} can't afford promises. Who funds it?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Money doesn't grow on resolutions. Where does it come from?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Every plan has a bill. Who gets yours?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Does {student_country} pay its share, or just talk about it?",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Taxes, fees, donations? Pick one.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Who pays when it costs more than expected?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Poor countries can't carry this. Who helps them?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Your plan is free on paper. Nothing's free.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "What gets cut so this can be funded?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Show me the budget, delegate.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Cost first, then I'll listen to the rest.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Who's writing the check?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   }
+  ],
+  "sovereignty_focus": [
+   {
+    "text": "That interferes with our sovereignty.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "{country} decides its own laws, delegate.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You said '{quote}'. Who gave the UN that power?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Every country is different. One rule for all doesn't fit.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "We will not be told how to run our country.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Respect our borders and our choices.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Help is welcome. Orders are not.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Who checks our progress? Our own government. Not outsiders.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Sovereignty isn't a detail. It's the foundation.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "{country} will cooperate, not obey.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Your plan sends inspectors. We say no.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Let each nation choose its own path on {topic}.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "A plan that ignores sovereignty won't get votes.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Suggestions, yes. Rules, no.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Our people elected our leaders, not this committee.",
+    "expression": "stern",
+    "eyebrows": -2
+   }
+  ],
+  "human_rights_focus": [
+   {
+    "text": "Does your plan protect human rights, or just budgets?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "People's rights come first. Where are they in your plan?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "You said '{quote}'. What about the right to safety?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Every person deserves dignity. How does your plan ensure it?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "{country} won't sign anything that ignores human rights.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Who protects the most vulnerable in your plan?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Rights aren't optional, delegate.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Your plan talks about countries. I want to hear about people.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Does anyone lose a right because of this?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Children, refugees, workers. Name one group your plan protects.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Human rights are the test. Your plan hasn't passed it yet.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Freedom of speech, privacy, safety. Which one does this help?",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "We need guarantees, not hopes, for people's rights.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "A good plan protects people even when it's inconvenient.",
+    "expression": "thinking",
+    "eyebrows": 0
+   },
+   {
+    "text": "Start with rights, then talk about rules.",
+    "expression": "stern",
+    "eyebrows": -2
+   }
+  ],
+  "security_focus": [
+   {
+    "text": "Is this safe? That's {country}'s first question.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "What happens if bad actors use your plan?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "You said '{quote}'. Is that a security risk?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Safety first, delegate. Then everything else.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Who protects the people running this program?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Your plan opens a door. Who else walks through it?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Security isn't a side issue on {topic}.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "How do we stop this from being misused?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "{country} needs guarantees about safety.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "A plan that isn't secure isn't a plan.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "What's the risk, and who manages it?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "If something goes wrong, who responds?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Peace and safety come before speed.",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "We've seen good programs turned into weapons. How is yours protected?",
+    "expression": "stern",
+    "eyebrows": -2
+   },
+   {
+    "text": "Show me the safety plan, delegate.",
+    "expression": "stern",
+    "eyebrows": -2
+   }
+  ],
+  "outdated_data": [
+   {
+    "text": "That number is old, delegate.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Those figures are from years ago. Things changed.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "You said '{quote}'. Is that still true today?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Old data, old plan.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "{country} has newer numbers. They say something else.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "When was that measured? Last decade?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "The world moved on. Your facts didn't.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "That was true once. Is it true now?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Recent reports disagree with you.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Your source is out of date, delegate.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "That's yesterday's news on {topic}.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Update your numbers, then we'll talk.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "Interesting history. What does today look like?",
+    "expression": "skeptical",
+    "eyebrows": -1
+   },
+   {
+    "text": "Things are moving fast. Your data isn't.",
+    "expression": "smug",
+    "eyebrows": 1
+   },
+   {
+    "text": "I'd check the date on that, delegate.",
+    "expression": "smug",
+    "eyebrows": 1
+   }
+  ]
+ },
+ "gentle": [
+  {
+   "text": "A fair point, delegate. Can you tell me a little more about how it works?",
+   "expression": "impressed",
+   "eyebrows": 1
+  },
+  {
+   "text": "I see what you mean. What would be your first small step?",
+   "expression": "thinking",
+   "eyebrows": 0
+  },
+  {
+   "text": "That's a good start. Who would it help the most?",
+   "expression": "amused",
+   "eyebrows": 1
+  },
+  {
+   "text": "Okay, delegate. {country} is curious. How would you pay for it?",
+   "expression": "thinking",
+   "eyebrows": 0
+  },
+  {
+   "text": "Thank you. I like that idea. Is there one example you could share?",
+   "expression": "impressed",
+   "eyebrows": 1
+  }
+ ],
+ "dodge": [
+  {
+   "text": "Hmm, I don't think that answered my question. Could you try again?",
+   "expression": "skeptical",
+   "eyebrows": -1
+  },
+  {
+   "text": "That was short, delegate. Can you say a bit more?",
+   "expression": "thinking",
+   "eyebrows": 0
+  },
+  {
+   "text": "I'm not sure that was an answer. What's your main point?",
+   "expression": "skeptical",
+   "eyebrows": -1
+  }
+ ],
+ "evidence_ok": [
+  {
+   "text": "Hm. That's a real example. I'll give you that one, delegate.",
+   "expression": "impressed",
+   "eyebrows": 1
+  },
+  {
+   "text": "A fair point, delegate. Your example helps. But is it enough?",
+   "expression": "impressed",
+   "eyebrows": 1
+  }
+ ]
+}
