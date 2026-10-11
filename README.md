@@ -20,7 +20,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Open **http://localhost:5000**. That's it — no API key needed.
+Open **http://localhost:5000**. That's it — no API key needed. (If port 5000 is busy — on a Mac, AirPlay Receiver uses it — the app picks the next free port and prints the address to open.)
 
 - It starts in **demo mode** (a yellow ribbon says "Demo mode — the AI is pretend"). Pretend AI answers look real, so you can try everything for free.
 - **Club code to join:** `blanksheet` (only while you haven't set `CLUB_CODE`).
@@ -54,7 +54,7 @@ Keys live **only** in `.env` (which git ignores). They are never sent to the bro
 ## Tests
 
 ```bash
-pytest                       # 63 tests, always in demo mode, ~20 seconds
+pytest                       # 68 tests, always in demo mode, ~20 seconds
 ```
 
 Real-browser tests (Chromium at Chromebook size 1366×768) are optional:
@@ -62,7 +62,7 @@ Real-browser tests (Chromium at Chromebook size 1366×768) are optional:
 ```bash
 pip install -r requirements-dev.txt
 python -m playwright install chromium
-pytest                       # now 69 tests, including tests/e2e
+pytest                       # now 75 tests, including tests/e2e
 ```
 
 Before committing, `python scripts/check_secrets.py` scans for anything that looks like a key.

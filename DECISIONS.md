@@ -7,7 +7,11 @@ A running log of choices made where `BUILD_PROMPT.md` didn't say, was unclear, o
 ## Moving to nabiii4/Model-UN
 
 52. **The site now lives in https://github.com/nabiii4/Model-UN** on its `main` branch (the repo was empty except a one-line README, which the project README replaced). The first build was made on the `claude/zen-shannon-kk4zfd` branch of `nabiii4/Map`; Model-UN is the home from now on.
-53. **How it works links to the code** because the repo is public (§6.15 says to link it only if public). The link is the site-text key `site.code_repo_url`, so editors can change it in Admin → Site text, or type `none` to hide it (for example if the repo is ever made private). Only `https://` links are shown, so a `javascript:` link can never be added there.
+53. **How it works links to the code** because the repo is public (§6.15 says to link it only if public). The link is the site-text key `site.code_repo_url`, so editors can change it in Admin → Site text, or type `none` to hide it (for example if the repo is ever made private). Only `https://` links are shown (any capitalization), so a `javascript:` link can never be added there.
+
+54. **Tilted Wall cards are clipped left/right with 12px of room** (`.wall-grid` in `components.css`). Random tilts up to 2° made a card poke about 1px past a 390px phone screen, causing sideways scrolling. 12px covers the biggest tilt on the tallest card plus the Example ribbon, and fits inside the page's side padding.
+
+55. **`python app.py` picks the next free port if 5000 is taken** (it prints the address to open). On Macs, AirPlay Receiver holds port 5000, so the spec's default would otherwise crash with "Address already in use". Production (gunicorn) is unaffected.
 
 ## Phase 0 + Phase 1 (first build)
 

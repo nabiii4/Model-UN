@@ -149,5 +149,7 @@ html[data-motion="reduce"] *, html[data-motion="reduce"] *::before, html[data-mo
 .how-steps li .how-icon { position: absolute; left: 6px; top: 6px; font-size: 2rem; }
 .privacy-list li { margin-bottom: 10px; }
 .center-panel { text-align: center; margin-top: 30px; }
+/* Long web addresses can't break on their own; at bigger text sizes they'd push the page sideways on phones. */
+.long-link { overflow-wrap: anywhere; }
 .center-panel .btn-row { justify-content: center; }
 .check input { flex: none; }

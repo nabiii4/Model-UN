@@ -30,7 +30,7 @@ Nightmare Delegate is our Model UN club's practice website. New members draw the
 
 The code lives at **https://github.com/nabiii4/Model-UN** (public). Get your own copy with
 `git clone https://github.com/nabiii4/Model-UN.git`. The How it works page links there; change that link in
-Admin → Site text (`site.code_repo_url`), or type `none` there to hide the link (only `https://` links are shown).
+Admin → Site text (`site.code_repo_url`), or type `none` there to hide the link (only `https://` links are shown; capital letters are fine).
 
 | Folder / file | What's in it |
 |---|---|
@@ -173,6 +173,7 @@ The `description` is what the AI reads. For demo mode, also add 15 lines for a n
 | "Key rejected" | Paste the current key into `.env` / host settings; restart. |
 | "This page got a little stale" | The page sat open a long time or the server restarted. Refresh. |
 | Everyone got logged out | The server restarted without `FLASK_SECRET_KEY` set. Set it in `.env`. |
+| "Address already in use" / wrong port | Port 5000 is taken (on Macs, AirPlay Receiver uses it). The app now picks the next free port and prints it; or choose one with `PORT=5050 python app.py`. Avoid 5060/5061 (Chrome blocks them). |
 | "Database is locked" (SQLite) | Use one worker (`--workers 1`). In production use Postgres. |
 | Edited `data/*.json` but nothing changed | Restart the app. |
 | Demo ribbon won't go away | `MOCK_AI` is still 1, or the key/endpoint is missing or a placeholder. Check the startup messages. |

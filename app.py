@@ -199,6 +199,23 @@ def _register_errors(app):
         return page_error(500, "Oops", msg)
 
 
+def pick_port(preferred, host="0.0.0.0", tries=10):
+    """Use the preferred port, or the next free one instead of crashing.
+
+    Why: on Macs, AirPlay Receiver already uses port 5000, so `python app.py`
+    would fail with "Address already in use".
+    """
+    import socket
+    for port in range(preferred, preferred + tries + 1):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            try:
+                s.bind((host, port))
+                return port
+            except OSError:
+                continue
+    return preferred  # nothing free nearby: let Flask show the real error
+
+
 # For gunicorn: `gunicorn app:app`
 app = None
 
@@ -211,10 +228,18 @@ def _get_app():
 
 
 if __name__ == "__main__":
+    import os
     application = _get_app()
     cfg = application.config["APP_CONFIG"]
+    port = cfg.port
+    # With FLASK_DEBUG=1 the reloader runs this file twice; only the first run picks the port.
+    if os.environ.get("WERKZEUG_RUN_MAIN") != "true":
+        port = pick_port(cfg.port)
+        if port != cfg.port:
+            print(f"\n  Port {cfg.port} is busy (on a Mac, AirPlay Receiver uses 5000), so using {port} instead.")
+            os.environ["PORT"] = str(port)  # the reloader's second run reads PORT again
     print("\n  Nightmare Delegate is running.")
-    print(f"  Open http://localhost:{cfg.port} in your browser.")
+    print(f"  Open http://localhost:{port} in your browser.")
     if cfg.mock:
         print("  Demo mode: the AI is pretend (no key needed).")
         if cfg.club_code_is_default:
@@ -222,7 +247,7 @@ if __name__ == "__main__":
         if cfg.admin_passcode_is_demo:
             print("  Admin passcode (demo only): see README.md")
     print()
-    application.run(host="0.0.0.0", port=cfg.port, debug=cfg.debug, use_reloader=cfg.debug, threaded=True)
+    application.run(host="0.0.0.0", port=port, debug=cfg.debug, use_reloader=cfg.debug, threaded=True)
 else:
     # Imported by gunicorn or a test: build the app lazily only for gunicorn ("app:app").
     import sys

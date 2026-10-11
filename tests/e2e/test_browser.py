@@ -181,12 +181,19 @@ def test_keyboard_only_round(browser, base_url):
     page.close()
 
 
-@pytest.mark.parametrize("width", [360, 390, 1366])
+@pytest.mark.parametrize("width", [320, 360, 390, 1366])
 def test_no_sideways_scrolling(browser, base_url, width):
+    """Checked at every text size (100/115/130%) with every fold-out section open."""
     page = browser.new_page(viewport={"width": width, "height": 780})
-    for path in ["/", "/wall", "/draw?path=canvas", "/draw?path=paper", "/human", "/join", "/d/seed-varsity-shark",
-                 "/how-it-works", "/ritual", "/privacy"]:
+    for path in ["/", "/wall", "/draw?path=canvas", "/draw?path=paper", "/human", "/join", "/login",
+                 "/d/seed-varsity-shark", "/how-it-works", "/ritual", "/privacy", "/room"]:
         page.goto(base_url + path)
         page.wait_for_timeout(300)
-        assert page.evaluate("() => document.documentElement.scrollWidth") <= width, path
+        for size in ("100", "115", "130"):
+            sw = page.evaluate("""(size) => {
+              document.documentElement.dataset.text = size;
+              document.querySelectorAll('details').forEach((d) => { d.open = true; });
+              return document.documentElement.scrollWidth;
+            }""", size)
+            assert sw <= width, f"{path} at {size}% text: scrollWidth {sw} > {width}"
     page.close()

@@ -23,10 +23,10 @@
   <details class="panel"><summary class="hand">What is "demo mode"?</summary>
     <p>If the site has no AI key yet, it runs in demo mode: pretend answers that look real, so anyone can try it and develop it for free. You'll see a yellow ribbon at the top.</p></details>
   {% set repo_url = copy('site.code_repo_url') %}
-  {% if repo_url.startswith('https://') %}{# only real web links: "none" hides it, and javascript: links can't sneak in #}
+  {% if repo_url.lower().startswith('https://') %}{# only real web links: "none" hides it, and javascript: links can't sneak in #}
   <details class="panel"><summary class="hand">Can I see the code?</summary>
     <p>Yes! The whole site is public, so you can read how it works, learn from it, or help fix it:
-      <a href="{{ repo_url }}" rel="noopener" target="_blank">{{ repo_url }}<span class="sr-only"> (opens in a new tab)</span></a>.
+      <a class="long-link" href="{{ repo_url }}" rel="noopener" target="_blank">{{ repo_url }}<span class="sr-only"> (opens in a new tab)</span></a>.
       Keys are never in the code — they stay on the server.</p></details>
   {% endif %}
   <div class="btn-row"><a class="btn primary big" href="/draw">Try it</a><a class="btn" href="/ritual">Read the story</a></div>

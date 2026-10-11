@@ -159,5 +159,8 @@ html[data-readable="1"] .door .door-title { font-family: var(--font-body); font-
 .wall-card .card-actions { justify-content: space-between; margin-top: auto; }
 
 /* Tilted cards can poke a pixel past a narrow phone screen and cause sideways scrolling.
-   Clip only left/right (the tape on top still shows), with a little room so shadows aren't cut. */
-.wall-grid { overflow-x: clip; padding-inline: 6px; margin-inline: -6px; }
+   Clip only left/right (the tape on top still shows). The 12px of room covers the largest tilt (2deg on a
+   tall card is about 10px) and the Example ribbon; it fits inside main's side padding (12px on phones,
+   16px on bigger screens), so on phones the clip edge is the screen edge. Only the faint outer edge of
+   the soft shadow can be trimmed. */
+.wall-grid { overflow-x: clip; padding-inline: 12px; margin-inline: -12px; }
